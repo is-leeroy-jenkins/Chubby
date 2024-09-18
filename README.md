@@ -37,14 +37,14 @@ A WPF-based desktop application that kind of like task manager offering real-tim
 - Chubby supports AnyCPU as well as x86/x64 specific builds
 - [Data](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Data) - master data layer with associated controls and related functionality.
 - [Enumerations](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Enumerations) - various enumerations used in Chubby.
-- [Extensions](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Extensions)- extension methods used by type.
+- [Extensions](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Extensions)- extension methods by type.
 - [Clients](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Data/Clients) - other tools used and available.
 - [Models](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Ninja) - models used in Chubby analytics.
 - [IO](https://github.com/is-leeroy-jenkins/Chubby/tree/master/IO) - input output classes used for networking and the file systemm.
 - [Static](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Static) - static types used in Chubby.
-- [Services](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Services) - unique sevice classes in the application.
+- [Services](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Services) - unique sevice classes in by Chubby.
 - [Controls](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Controls) - Chubby Controls.
-- [Controls](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Controls) - Chubby Windows.
+- [Windows](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Windows) - Chubby Windows.
 - [Styles](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Styles) - Chubby Styles.
 - [Themes](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Themes) - Chubby Themes.
 
