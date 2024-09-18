@@ -57,3 +57,5 @@ Data/Database/SQLite/DataModels/Data.db
 Data/Database/Access/DataModels/Data.accdb
 IO/Clients/Baby/runtimes/win-x64/native/libcef.zip
 /.vs
+/bin/Debug/net6.0-windows7.0
+/obj
