@@ -1,0 +1,3005 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.HtmlConverter.Base</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.AdditionalDelay">
+            <summary>
+            Gets or sets the additional delay to load JavaScript; Unit is Milliseconds;
+            </summary>
+            <value> A integer value indicating to apply delay for loading scripts.Unit is Milliseconds; By default 0 </value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableHyperLink">
+            <summary>
+            Gets or Sets a value indicating whether to preserve the live-links in the converted document or not;
+            </summary>
+            <value>True if the Hyperlinks are enabled, otherwise false.Default is true </value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableJavaScript">
+            <summary>
+            Gets or Sets a value indicating whether to Enable/Disable JavaScripts in the webpage;
+            </summary>
+            <value>True if Javascript is enabled, otherwise,false. default is true</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.Password">
+            <summary>
+            Gets or Sets the Password for Windows Authentication
+            </summary>
+            <value>String value representing the password of the HTML document. By default ""</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.Username">
+            <summary>
+            Gets or Sets the Username for Windows Authentication
+            </summary>
+            <value>String value representing the password of the HTML document. By default ""</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.TempPath">
+            <summary>
+            Gets or sets the temp path where the temporary operations are performed if any;
+            </summary>
+            <value> Temp path which contains internal conversion files.By default %temp%</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.WebKitPath">
+            <summary>
+            Gets or Sets WebKit assembly path; 
+            </summary>
+            <value> Specifies WebKit assemblies path.By default bin folder</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.WebKitViewPort">
+            <summary>
+            WebKit view port size; 
+            </summary>
+            <value>By default use system ViewPort size</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.Cookies">
+            <summary>
+            Gets or sets cookie collection with names and values
+            </summary>
+            <value> The cookies Collection </value>
+            <seealso cref="T:Syncfusion.HtmlConverter.CookieCollection"/> Class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.HttpPostFields">
+            <summary>
+            Gets or sets the HTTP post collection fields.
+            </summary>
+            <remarks>
+            Presence of elements in this collection will initiate Post request or else it will proceed with Get request.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.WindowStatus">
+            <summary>
+            Gets or Sets the window status
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableBookmarks">
+            <summary>
+            A property indicating if the automatic creation of bookmarks in PDF for the H1 to H6 HTML elements is enabled or not. By default the automatic bookmarks creation is disabled
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableToc">
+            <summary>
+            A property indicating if the automatic creation of a table of contents items for the H1 to H6 HTML elements is enabled or not. By default this property is false
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.Toc">
+            <summary>
+            Gets or sets Toc styles
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableForm">
+            <summary>
+            Gets or sets enable form; If it is enabled then HTML form fields are converted to PDF form fields in the generated PDF document. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableRepeatTableHeader">
+            <summary>
+            Gets or sets the repetition of table header. By enabling this property, will repeat the table header on every page break. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableRepeatTableFooter">
+            <summary>
+            Gets or sets the repetition of table footer. By enabling this property, will repeat the table footer on every page break. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.MediaType">
+            <summary>
+            Gets or sets media type of WebKit HTML converter
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.ProxySettings">
+            <summary>
+            Gets or sets proxy server settings for WebKit HTML conversion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.EnableOfflineMode">
+            <summary>
+            Gets or sets the Enable Offline mode; default value false;
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.HttpRequestHeaders">
+            <summary>
+            Gets or sets the HTTP Request header collection fields.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.HtmlElementID">
+            <summary>
+            Gets or sets the  HTML element ID 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.WebKitOutputPath">
+            <summary>
+            Gets or sets WebKit temporary PDF path
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlConverter.BackgroundColor">
+            <summary>
+            Gets or sets a background color when converting a HTML document.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlConverter.DeleteFile(System.String)">
+            <summary>
+            Delete the file
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlConverter.CheckConversionDone(System.String)">
+            <summary>
+            check conversion is success or not in temporary process and throws the relevent exception
+            </summary> 
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlConverter.LauchWebKitWrapper(System.String,System.String)">
+            <summary>
+            Start the WebKitWrapper process and generates temporary PDF document
+            </summary>
+            <param name="WebKitBinary">Full path of the WebKitWrapper application</param>
+            <param name="args">Argument to the command line WebKitWrapper application</param>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.HtmlToPdfConverter">
+            <summary>
+            Class which allows converting HTML to PDF.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlToPdfConverter.RenderingEngine">
+            <summary>
+            Gets or sets the rendering engine used for conversion.
+            </summary>
+            <value> Specifies rendering engine (By default, WebKit rendering engine).</value>
+            <example>
+            //Initialize the HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Set rendering engine for conversion
+            htmlConverter.RenderingEngine = HtmlRenderingEngine.WebKit;
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings settings = new WebKitConverterSettings();
+            //Set WebKitPath
+            settings.WebKitPath = "/QtBinaries/";
+            //Assign WebKit settings to the HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save and close the PDF document 
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConverterSettings">
+            <summary>
+            Gets or sets the rendering engine settings.
+            </summary>
+            <value> Specifies rendering engine settings.</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.HtmlToPdfConverter.ReuseBrowserProcess">
+            <summary>
+            Gets or sets a value indicating whether browser process reuse is enabled. Browser process reuse can improve conversion performance by keeping the underlying browser process running between conversions.
+            </summary>
+            <remarks>
+            The chromium process will be running in background after every conversion. Should explicitly close the HtmlToPdfConverter, if this property is enabled.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.HtmlToPdfConverter"/> class.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.#ctor(Syncfusion.HtmlConverter.HtmlRenderingEngine)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.HtmlToPdfConverter"/> class with specified <see cref="P:Syncfusion.HtmlConverter.HtmlToPdfConverter.RenderingEngine"/>.
+            </summary>
+            <param name="renderingEngine">Rendering Engine used for conversion</param>
+            <remarks>
+            To know more details about HTML to PDF converter, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/converting-html-to-pdf"> link</see>. 
+            </remarks>
+            <example>
+            //Initialize the HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings settings = new WebKitConverterSettings();
+            //Set WebKit path
+            settings.WebKitPath = @"/QtBinaries/";
+            //Assign WebKit settings to the HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save and close the PDF document 
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.DeleteFile(System.String)">
+            <summary>
+            Delete the file
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.Convert(System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts URL to PdfDocument with layout result.
+            </summary>
+            <param name="url">Path to the HTML resource.</param>
+            <param name="layout">Layout result</param>
+            <returns>The PDF document</returns>
+            <example>
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set webkitSettings to the html converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert URL to PDF and get PDF layout result
+            PdfDocument document = htmlConverter.Convert("https://www.google.com", out pdfLayoutResult);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+            <seealso cref="T:Syncfusion.Pdf.Graphics.PdfLayoutResult"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.Convert(System.String)">
+            <summary>
+            Converts URL to PdfDocument.
+            </summary>
+            <param name="url">Path to the HTML resource.</param>
+            <returns>The PDF document</returns>
+            <example>
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set webkitSettings to the html converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.Convert(System.String,System.String)">
+            <summary>
+            Converts HTML string to PdfDocument
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <returns>PDF document</returns>
+            <example>
+            //Input HTML string
+            string htmlString = "<HTML><BODY><H1>Welcome to Syncfusion.!</H1><P>Simple HTML content</P></BODY></HTML>";
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set WebKit settings to the converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert HTML string to pdf
+            PdfDocument document = htmlConverter.Convert(htmlString, "");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.Convert(System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts HTML string to PdfDocument with layout result.
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="layout">Layout result</param>
+            <returns>PDF document</returns>
+            <example>
+            //Input HTML string
+            string htmlString = "<HTML><BODY><H1>Welcome to Syncfusion.!</H1><P>Simple HTML content</P></BODY></HTML>";
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set WebKit settings to the converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert HTML string to pdf and get the Layout result
+            PdfDocument document = htmlConverter.Convert(htmlString, "", out pdfLayoutResult);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtml(System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts URL to partial PdfDocument
+            </summary>
+            <param name="url">Path to the HTML resource.</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to PDF</param>
+            <param name="layout">Layout result</param>
+            <returns>The PDF document</returns>
+            <example>            
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set WebKit settings to the converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert partial HTML to PDF using HTML element ID
+            PdfDocument document = htmlConverter.ConvertPartialHtml("http://www.google.com", "lga", out pdfLayoutResult);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class 
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtml(System.String,System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts HTML string to partial PdfDocument.
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to PDF</param>
+            <param name="layout">Layout result</param>
+            <returns>The PDF document</returns>
+            <example>            
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            //Set WebKit path
+            settings.WebKitPath = @"/QtBinaries/";
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert HTML string to PDF and get PDF layout result
+            PdfDocument document = htmlConverter.ConvertPartialHtml(htmlText, baseUrl, "pic", out pdfLayoutResult);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtml(System.String,System.String)">
+            <summary>
+            Converts URL to partial PdfDocument
+            </summary>
+            <param name="url">Path to the HTML resource.</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to PDF</param>
+            <returns>The PDF document</returns>
+            <example>
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "QtBinaries";
+            //Set WebKit settings to the converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert partial HTML to PDF using HTML element ID
+            PdfDocument document = htmlConverter.ConvertPartialHtml("http://www.google.com", "lga");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> clas
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtml(System.String,System.String,System.String)">
+            <summary>
+            Converts HTML string to partial Pdfdocument.
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to PDF</param>
+            <returns>The PDF document</returns>
+            <example>
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            //Set WebKit path
+            settings.WebKitPath = @"/QtBinaries/";
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert partial HTML string to PDF using HTML element ID
+            PdfDocument document = htmlConverter.ConvertPartialHtml(htmlText, baseUrl, "pic");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtmlToImage(System.String,System.String)">
+            <summary>
+            Converts URL to Partial Image
+            </summary>
+            <param name="url">Path to the Html resource.</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to image</param>
+            <returns>Image</returns>
+            <remarks>
+            To know more details about partial HTML to Image conversion, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/working-with-document-conversions#partial-webpage-to-raster-image">link</see>.
+            </remarks>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert Partial HTML to Image
+            Image image = htmlConverter.ConvertPartialHtmlToImage("input.html", "pic");
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtmlToImage(System.String,System.String,System.String)">
+            <summary>
+            Converts HTML string to Partial Image.
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to image</param>
+            <returns>Image</returns>
+            <remarks>
+            To know more details about partial HTML to Image conversion, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/working-with-document-conversions#partial-webpage-to-raster-image">link</see>.
+            </remarks>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert Partial HTML to Image
+            Image image = htmlConverter.ConvertPartialHtmlToImage(htmlText, baseUrl, "pic");
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtmlToImage(System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts URL to Partial Image
+            </summary>
+            <param name="url">Path to the Html resource.</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to image</param>
+            <param name="layout">Layout result</param>
+            <returns>Image</returns>
+            <remarks>
+            To know more details about partial HTML to Image conversion, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/working-with-document-conversions#partial-webpage-to-raster-image">link</see>.
+            </remarks>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert Partial HTML to Image using HTML element ID
+            Image image = htmlConverter.ConvertPartialHtmlToImage("input.html", "pic", out pdfLayoutResult);
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtmlToImage(System.String,System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts HTML string to Partial Image.
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="htmlElementID">Used to convert particular part of a HTML page to image</param>
+            <param name="layout">Layout result</param>
+            <returns>Image</returns>
+            <remarks>
+            To know more details about partial HTML to Image conversion, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/working-with-document-conversions#partial-webpage-to-raster-image">link</see>.
+            </remarks>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert Partial HTML to Image with Element ID
+            Image image = htmlConverter.ConvertPartialHtmlToImage(htmlText, baseUrl, "pic", pdfLayoutResult);
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertPartialHtmlToSvg(System.String,System.String,System.IO.Stream)">
+            <summary>
+            Converts an URL or local file to SVG and writes the converted SVG into a stream.
+            </summary>
+            <param name="url">The URL or local file path of the HTML document to convert to SVG.</param>
+            <param name= "htmlElementID">Used to convert particular part of a HTML page to SVG</param>
+            <param name= "stream">The stream  of the converted SVG file.</param>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            Stream stream = new MemoryStream();
+            //Convert Partial HTML to SVG
+            htmlConverter.ConvertPartialHtmlToSvg("https://www.google.com", "lga", stream);
+            using (System.IO.FileStream output = new System.IO.FileStream(@"C:\MyOutput.svg", FileMode.Create))
+            {
+                stream.CopyTo(output);
+            }
+            stream.Dispose();
+            </example>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertToImage(System.String,System.String)">
+            <summary>
+            Converts HTML string to Image
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <returns>Image</returns>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert HTML to Image
+            Image image = htmlConverter.ConvertToImage(htmlText, baseUrl);
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertToImage(System.String,System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts HTML string to Image
+            </summary>
+            <param name="html">html string</param>
+            <param name="baseurl">Path of the resource used in the HTML</param>
+            <param name="layout">Layout result</param>
+            <returns>Image</returns>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //HTML string and Base URL 
+            string htmlText = "<html><body><div id="pic"><img src="syncfusion_logo.gif"></img></div><p> Hello World</p></body></html>";
+            string baseUrl = @"C:/Temp/HTMLFiles/";
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert HTML to Image
+            Image image = htmlConverter.ConvertToImage(htmlText, baseUrl, out pdfLayoutResult);
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertToImage(System.String)">
+            <summary>
+            Converts URL to Image
+            </summary>
+            <param name="url">Path to the Html resource.</param>
+            <returns>Image</returns>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert HTML to Image
+            Image image = htmlConverter.ConvertToImage("http://www.google.com");
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertToImage(System.String,Syncfusion.Pdf.Graphics.PdfLayoutResult@)">
+            <summary>
+            Converts URL to Image
+            </summary>
+            <param name="url">Path to the Html resource.</param>
+            <param name="layout">Layout result</param>
+            <returns>Image</returns>
+            <example>
+            //Initialize HTML converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            // WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Assign the WebKit binaries path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign the WebKit settings
+            htmlConverter.ConverterSettings = webKitSettings;
+            Initialize PDF layout result
+            PdfLayoutResult pdfLayoutResult = null;
+            //Convert HTML to Image
+            Image image = htmlConverter.ConvertToImage("http://www.google.com", out pdfLayoutResult);
+            //Save Image
+            File.WriteAllBytes("output.jpg", image.ImageData);
+            </example>
+            <seealso cref="T:System.Drawing.Image"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlRenderingEngine"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.ConvertToSvg(System.String,System.IO.Stream)">
+            <summary>
+            Converts an URL or local file to SVG and writes the converted SVG into a stream.
+            </summary>
+            <param name="url">The URL or local file path of the HTML document to convert to SVG.</param>
+            <param name= "outputStream">The stream  of the converted SVG file.</param>
+            <example>
+            //Initialize HTML converter with WebKit rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKit path
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            Stream stream = new MemoryStream();
+            //Convert URL to SVG
+            htmlConverter.ConvertToSvg(url, stream);
+            using (System.IO.FileStream output = new System.IO.FileStream(@"C:\MyOutput.svg", FileMode.Create))
+            {
+                stream.CopyTo(output);
+            }
+            stream.Dispose();
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.UpdateWebKitSettings(Syncfusion.HtmlConverter.WebKitConverterSettings)">
+            <summary>
+            Update WebKit converter settings
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.UpdateBlinkSettings(Syncfusion.HtmlConverter.BlinkConverterSettings)">
+            <summary>
+            Update Blink converter settings
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.AssignHtmlElementID(System.String)">
+            <summary>
+            Assign the htmlElementID to converter and convert HTML to PDF.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.HtmlToPdfConverter.Close">
+            <summary>
+            Closes the browser process after conversions are completed. 
+            </summary>
+            <remarks>
+            Should explicitly close the HtmlToPdfConverter, if ReuseBrowserProcess property in enabled. 
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.IHtmlConverterSettings">
+            <summary>
+            Interface for converter settings
+            </summary> 
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.TempPath">
+            <summary>
+            Gets or sets the temporary folder path where the temporary operations are performed if any; By default, system temporary folder path.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set temporary path for conversion
+            converterSettings.TempPath = @"C:/HtmlConversion/Temp/";
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.AdditionalDelay">
+            <summary>
+            Gets or sets the additional delay to load JavaScript, unit is Milliseconds. By default, 0.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set AdditionalDelay for conversion
+            converterSettings.AdditionalDelay = 2000;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.EnableHyperLink">
+            <summary>
+            Gets or sets a value indicating whether to preserve the live-links in the converted document or not; By default, true.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set EnableHyperLink
+            converterSettings.EnableHyperLink = true;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.EnableJavaScript">
+            <summary>
+            Gets or sets a value indicating whether to enable or disable JavaScripts in the webpage; By default, true.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set EnableJavaScript
+            converterSettings.EnableJavaScript = true;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.Password">
+            <summary>
+            Gets or sets the password; By default, empty.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set username and password for windows authentication
+            converterSettings.Username = "username";
+            converterSettings.Password = "password";
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.Username">
+            <summary>
+            Gets or sets the username; By default, empty.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set username and password for windows authentication
+            converterSettings.Username = "username";
+            converterSettings.Password = "password";
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.Margin">
+            <summary>
+            Gets or sets the margins to a PDF document; By default, all margins are 0.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings.
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = @"/QtBinaries/";
+            //Set margins
+            webKitSettings.Margin.All = 20;
+            //Assign WebKit settings to HTML converter.
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert HTML string to PDF.
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.Graphics.PdfMargins"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.PdfHeader">
+            <summary>
+            Gets or sets the Header to a PDF document; By default, null.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "/QtBinaries/";
+            //Create PDF page template element for header with bounds.
+            PdfPageTemplateElement header = new PdfPageTemplateElement(new RectangleF(0, 0, webKitSettings.PdfPageSize.Width, 50));
+            //Create font and brush for header element.
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 7);
+            PdfBrush brush = new PdfSolidBrush(Color.Black);
+            //Draw the header string in header template element. 
+            header.Graphics.DrawString("This is header", font, brush, PointF.Empty);
+            //Assign the header element to PdfHeader of WebKit settings.
+            webKitSettings.PdfHeader = header;
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.PdfFooter">
+            <summary>
+            Gets or sets the Footer to a PDF document; By default, null.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "/QtBinaries/";
+            //Create PDF page template element for footer with bounds.
+            PdfPageTemplateElement footer = new PdfPageTemplateElement(new RectangleF(0, 0, webKitSettings.PdfPageSize.Width, 50));
+            //Create font and brush for header element.
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 7);
+            PdfBrush brush = new PdfSolidBrush(Color.Black);
+            //Draw the footer string in footer template element. 
+            footer.Graphics.DrawString("This is footer", font, brush, PointF.Empty);
+            //Assign the footer element to PdfFooter of WebKit settings.
+            webKitSettings.PdfFooter = footer;
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.Orientation">
+            <summary>
+            Gets or sets the orientation of the PDF document; By default, Portrait.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "/QtBinaries/";
+            //Set PDF page orientation
+            webKitSettings.Orientation = PdfPageOrientation.Landscape;
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageOrientation"/> enum
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.PdfPageSize">
+            <summary>
+            Gets or sets the size of a PDF page; By default, A4 size.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "/QtBinaries/";
+            //Set PDF page size
+            webKitSettings.PdfPageSize = new SizeF(595, 842);
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageSize"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.PageRotateAngle">
+            <summary>
+            Gets or sets the number of degrees by which the page should be rotated clockwise when displayed or printed.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            webKitSettings.WebKitPath = "/QtBinaries/";
+            //Set PDF page rotation angle
+            webKitSettings.PageRotateAngle = PdfPageRotateAngle.RotateAngle90;
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageRotateAngle"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.SplitTextLines">
+            <summary>
+            Gets or sets the SplitTextLines property for splitting the lines.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set split text lines to false to avoid text split between PDF pages.
+            converterSettings.SplitTextLines = false;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.SplitImages">
+            <summary>
+            Gets or sets the SplitImages property for splitting the images.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set split images to false to avoid image split between PDF pages.
+            converterSettings.SplitImages = false;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.HtmlEncoding">
+            <summary>
+            Gets or sets HtmlEncoding for HTML string to PDF conversion.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Set Html Encoding
+            converterSettings.HtmlEncoding = Encoding.Default;
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.WebKitPath">
+            <summary>
+            Gets or sets a WebKitPath to the converter settings.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Assign converter settings to HTML converter
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.IHtmlConverterSettings.WebKitViewPort">
+            <summary>
+            Gets or sets a WebKitViewPort size.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            //Initialize the converter settings
+            IHtmlConverterSettings converterSettings = new WebKitConverterSettings();
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitPath = @"/QtBinaries/";
+            //Assign converter settings to HTML converter
+            //Set WebKitPath
+            (converterSettings as WebKitConverterSettings).WebKitViewPort = new Size(800, 0);
+            htmlConverter.ConverterSettings = converterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.CookieCollection">
+            <summary>
+             Class which represents collection of cookies name and value pair of data.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.HttpPostFieldCollection">
+             <summary>
+            Represents a collection of the HTTP POST parameters. 
+             </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.HttpRequestHeaderCollection">
+            <summary>
+            Represents a collection of the HTTP request headers
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.BlinkCommandLineArguments">
+            <summary>
+            Represents a collection of the Blink command line arguments.
+            </summary>
+            <example>
+            Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Initialize the Command Line Arguments 
+            BlinkCommandLineArguments commandLineArguments = new BlinkCommandLineArguments();
+            commandLineArguments.Add("--no-proxy-server");
+            BlinkSettings.CommandLineArguments = commandLineArguments;
+            //Assign the Blink settings
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.WebKitProxySettings">
+            <summary>
+            Class which represents the proxy settings for WebKit HTML converter.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.UseSystemProxy">
+            <summary>
+            Gets or sets to use system proxy settings; If it is set to true, WebKit converter use system proxy settings for conversion. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.HostName">
+            <summary>
+            Gets or sets host name of proxy server
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.PortNumber">
+            <summary>
+            Gets or sets port number of proxy server
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.Username">
+            <summary>
+            Gets or sets username of proxy server; optional;
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.Password">
+            <summary>
+            Gets or sets password of proxy server; optional;
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitProxySettings.Type">
+            <summary>
+            Gets or sets type of proxy server
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.WebKitProxySettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.WebKitProxySettings"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.WebKitConverterSettings">
+            <summary>
+            Class which represents the settings of WebKit rendering engine
+            </summary>
+            <example>
+            //Initialize HtmlToPdfConverter with WebKitConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            WebKitConverterSettings webKitSettings = new WebKitConverterSettings();
+            //Set WebKit settings
+            webKitSettings.WebKitPath = "QtBinaries";
+            webKitSettings.AdditionalDelay = 1000;
+            webKitSettings.Cookies.Add("CookieName", "CookieValue");
+            webKitSettings.EnableBookmarks = true;
+            webKitSettings.EnableForm = true;
+            webKitSettings.EnableHyperLink = true;
+            webKitSettings.EnableJavaScript = true;
+            webKitSettings.EnableOfflineMode = false;
+            webKitSettings.EnableRepeatTableHeader = true;
+            webKitSettings.EnableRepeatTableFooter = true;
+            webKitSettings.EnableToc = true;
+            webKitSettings.HttpPostFields.Add("PostKey", "PostValue");
+            webKitSettings.HttpRequestHeaders.Add("HeaderKey", "HeaderValue");
+            webKitSettings.Margin.All = 10;
+            webKitSettings.MediaType = MediaType.Print;
+            webKitSettings.Orientation = PdfPageOrientation.Landscape;
+            webKitSettings.PageRotateAngle = PdfPageRotateAngle.RotateAngle0;
+            webKitSettings.Username = "";
+            webKitSettings.Password = "";
+            webKitSettings.PdfPageSize = new SizeF(200, 300);
+            webKitSettings.SinglePageLayout = SinglePageLayout.None;
+            webKitSettings.SplitImages = false;
+            webKitSettings.SplitTextLines = false;
+            webKitSettings.WebKitViewPort = new Size(1024, 0);
+            webKitSettings.WindowStatus = "";
+            //Set WebKit settings to the converter
+            htmlConverter.ConverterSettings = webKitSettings;
+            //Convert partial HTML to PDF using HTML element ID
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.TempPath">
+            <summary>
+            Gets or sets the temporary path where the temporary operations are performed if any.
+            </summary>
+            <value> Temp path which used to create internal files for conversion. By default %temp%</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.AdditionalDelay">
+            <summary>
+            Gets or sets the additional delay to load JavaScript. Unit is Milliseconds.
+            </summary>
+            <value> A integer value indicating to apply delay for loading scripts. Unit is Milliseconds; By default 0 </value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableHyperLink">
+            <summary>
+            Gets or sets a value indicating whether to preserve the live-links in the converted document;
+            </summary>
+            <value>True if the Hyperlinks are enabled, otherwise false. By default true. </value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableJavaScript">
+            <summary>
+            Gets or sets a value indicating whether to enable or disable JavaScripts in the webpage.
+            </summary>
+            <value>True if Javascript is enabled, otherwise,false. By default true</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>String value representing the password of web page. By default empty</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>String value representing the username of web page. By default empty</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Margin">
+            <summary>
+            Gets or sets the margins to the a document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.Graphics.PdfMargins"/>, provides margins to the PDF page. By default , PDF margin is 0.</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.PdfHeader">
+            <summary>
+            Gets or sets the Header to a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> to draw into the PDF page. By default null</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.PdfFooter">
+            <summary>
+            Gets or sets the Footer to a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> to draw into the PDF page. By default null</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Orientation">
+            <summary>
+            Gets or sets the orientation of a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageOrientation"/>, provides the orientation of the PDF page.By default Portrait</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.PdfPageSize">
+            <summary>
+            Gets or sets the size of a PDF page.
+            </summary>
+             <remarks>Default value: 595 * 842 pixels (A4 size)</remarks>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.PageRotateAngle">
+            <summary>
+            Gets or sets the number of degrees by which the page should be rotated clockwise when displayed or printed.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageRotateAngle"/>,provides number of degrees by which the page should be rotated clockwise when displayed or printed </value>
+            <remarks>Default value: RotateAngle0 </remarks>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.SplitTextLines">
+            <summary>
+            Get or sets the SplitTextLines property for splitting the lines.
+            </summary>
+             <value><c>true</c> if [Split Text lines]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.SplitImages">
+            <summary>
+            Gets or sets the SplitImages property for splitting the images.
+            </summary>
+            <value><c>true</c> if [Split Images]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.WebKitPath">
+            <summary>
+            Gets or sets the WebKit binaries path.
+            </summary>
+            <value> Specifies WebKit assemblies path. By default bin folder</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.WebKitViewPort">
+            <summary>
+            Gets or sets the WebKit view port size.
+            </summary>
+            <value>By default 1024x0 ViewPort size</value>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableBookmarks">
+            <summary>
+            A property indicating if the automatic creation of bookmarks in PDF for the H1 to H6 HTML elements is enabled or not. By default the automatic bookmarks creation is disabled.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableToc">
+            <summary>
+            A property indicating if the automatic creation of a table of contents items for the H1 to H6 HTML elements is enabled or not. By default this property is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.TocPageCount">
+            <summary>
+            Gets the table of content page count.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //Initialize WebKitConverter settings
+            WebKitConverterSettings settings = new WebKitConverterSettings();
+            //Set WebKit path
+            settings.WebKitPath = "/QtBinaries/";
+            //Set enable toc
+            settings.EnableToc = true;
+            //Assign WebKit settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Get Toc Page Count
+            int tocPageCount = settings.TocPageCount;
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Toc">
+            <summary>
+            Gets or sets Toc styles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.Cookies">
+            <summary>
+            Gets or sets the cookie collection with their name and value.
+            </summary>
+            <value> The cookies Collection </value>
+            <seealso cref="T:Syncfusion.HtmlConverter.CookieCollection"/> Class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.HttpPostFields">
+            <summary>
+            Gets or sets the HTTP post collection fields.
+            </summary>
+            <remarks>
+            Presence of elements in this collection will initiate Post request or else it will proceed with Get request.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.WindowStatus">
+            <summary>
+            Gets or sets the window status.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableForm">
+            <summary>
+            Gets or sets enable form; If it is enabled, then HTML form fields are converted to PDF form fields in the generated PDF document. By default, false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableRepeatTableHeader">
+            <summary>
+            Gets or sets the repetition of table header. By enabling this property, will repeat the table header on every page break. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableRepeatTableFooter">
+            <summary>
+            Gets or sets the repetition of table footer. By enabling this property, will repeat the table footer on every page break. The default value is false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.MediaType">
+            <summary>
+            Gets or sets the media type of WebKit HTML converter
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.ProxySettings">
+            <summary>
+            Gets or sets the proxy server settings for WebKit HTML conversion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.EnableOfflineMode">
+            <summary>
+            Gets or sets the offline mode. By default, false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.HttpRequestHeaders">
+            <summary>
+            Gets or sets the HTTP Request headers.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.HtmlElementID">
+            <summary>
+            Gets or sets the HTML element ID 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.SinglePageLayout">
+            <summary>
+            Use this option to render the whole HTML content into single PDF page
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.BackgroundColor">
+            <summary>
+            Gets or sets a background color when converting a HTML document.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.HtmlEncoding">
+            <summary>
+            Gets or sets Encoding for HTML string to PDF conversion. 
+            </summary>
+            <remarks>This property will not have any effect on URL to PDF conversion</remarks>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.WebKitConverterSettings.DisableWebKitWarning">
+            <summary>
+            Sets a value that indicates whether to remove the WebKit engine warning or not. The default value is false.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.WebKitConverterSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/> class.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.BlinkProxySettings">
+            <summary>
+            Class that represents the proxy settings of the Blink HTML converter.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = "BlinkBinaries";
+            //Initialize Blink proxy settings and set the values
+            BlinkProxySettings proxySettings = new BlinkProxySettings();
+            proxySettings.Type = BlinkProxyType.http;
+            proxySettings.HostName = "127.0.0.1";
+            proxySettings.PortNumber = 8080;
+            //Assign the proxy settings to Blink settings
+            BlinkSettings.ProxySettings = proxySettings;
+            //Assign the Blink settings to the converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkProxyType"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkProxySettings.HostName">
+             <summary>
+             Gets or sets the host name of proxy server.
+             </summary>
+             <example>
+             //Initialize HTML converter
+             HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+             //Initialize Blink converter settings
+             BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+             //Assign the Blink path
+             BlinkSettings.BlinkPath = "BlinkBinaries";
+             //Set manual proxy with proxy server host and port number
+             BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+             BlinkSettings.ProxySettings.PortNumber = 8080;
+             //Assign Blink settings to HTML converter
+             htmlConverter.ConverterSettings = BlinkSettings;
+             //Convert url to pdf
+             PdfDocument document = htmlConverter.Convert("https://www.google.com");
+             //Save the output PDF document
+             MemoryStream stream = new MemoryStream();
+             document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkProxySettings.PortNumber">
+            <summary>
+            Gets or sets the port number of proxy server.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = "BlinkBinaries";
+            //Set manual proxy with proxy server host and port number
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkProxySettings.Type">
+            <summary>
+            Gets or sets the type of proxy server.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = "BlinkBinaries";
+            //Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            //Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkProxySettings.Username">
+            <summary>
+            Gets or sets the username of proxy server; optional.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            BlinkSettings.ProxySettings.Username = "user";
+            BlinkSettings.ProxySettings.Password = "pass";
+            //Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save and close the PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkProxySettings.Password">
+            <summary>
+            Gets or sets the password of proxy server; optional.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            BlinkSettings.ProxySettings.Username = "user";
+            BlinkSettings.ProxySettings.Password = "pass";
+            //Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save and close the PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.BlinkProxySettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.BlinkProxySettings"/> class.
+            </summary>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = "BlinkBinaries";
+            //Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            //Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.BlinkConverterSettings">
+            <summary>
+            Class that represents the settings of the Blink rendering engine.
+            </summary>
+            <example>
+            //Initialize HtmlToPdfConverter with BlinkConverterSettings
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set Blink settings
+            blinkSettings.BlinkPath = "BlinkBinaries";
+            blinkSettings.AdditionalDelay = 1000;
+            blinkSettings.Cookies.Add("CookieName", "CookieValue");
+            blinkSettings.EnableBookmarks = true;
+            blinkSettings.EnableForm = true;
+            blinkSettings.EnableHyperLink = true;
+            blinkSettings.EnableJavaScript = true;
+            blinkSettings.EnableOfflineMode = false;
+            blinkSettings.EnableRepeatTableHeader = true;
+            blinkSettings.EnableRepeatTableFooter = true;
+            blinkSettings.EnableToc = true;
+            blinkSettings.HttpPostFields.Add("PostKey", "PostValue");
+            blinkSettings.HttpRequestHeaders.Add("HeaderKey", "HeaderValue");
+            blinkSettings.Margin.All = 10;
+            blinkSettings.MediaType = MediaType.Print;
+            blinkSettings.Orientation = PdfPageOrientation.Landscape;
+            blinkSettings.PageRotateAngle = PdfPageRotateAngle.RotateAngle0;
+            blinkSettings.Username = "";
+            blinkSettings.Password = "";
+            blinkSettings.PdfPageSize = new SizeF(200, 300);
+            blinkSettings.SinglePageLayout = SinglePageLayout.None;
+            blinkSettings.ViewPortSize = new Size(1024, 0);
+            blinkSettings.WindowStatus = "";
+            //Set Blink settings to the converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert partial HTML to PDF using HTML element ID
+            PdfDocument document = htmlConverter.Convert("http://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.TempPath">
+            <summary>
+            Gets or sets the temporary folder path where the temporary operations are performed if any.
+            </summary>
+            <value> Temp path which contains internal conversion files. By default %temp%</value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set Temporary Path to generate temporary files
+            blinkConverterSettings.TempPath = @"C:/HtmlConversion/Temp/";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.AdditionalDelay">
+            <summary>
+            Gets or sets the additional delay to load JavaScript. Unit is Milliseconds.
+            </summary>
+            <value> A integer value indicating to apply delay for loading scripts.Unit is Milliseconds; By default 0 </value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            // Set additional delay; units in milliseconds
+            blinkConverterSettings.AdditionalDelay = 3000;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableHyperLink">
+            <summary>
+            Gets or sets a value indicating whether to preserve the live-links in the converted document or not.
+            </summary>
+            <value>If true, the Hyperlinks will be enabled, otherwise disabled. By default true </value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Enable hyperlinks; By default - true
+            blinkConverterSettings.EnableHyperLink = false;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableJavaScript">
+            <summary>
+            Gets or sets a value indicating whether to enable or disable JavaScripts in the webpage.
+            </summary>
+            <value>If true, the Javascript will be enabled, otherwise disabled. By default true</value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Disable JavaScript; By default, true
+            blinkConverterSettings.EnableJavaScript = false;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save and close the PDF document
+            document.Save("Output.pdf");
+            document.Close(true);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableLazyLoadImages">
+            <summary>
+            Gets or sets the lazy load images; default value false;
+            </summary>
+            /// <value>If true, the LazyLoadImages will be enabled, otherwise disabled. By default false</value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Enable LazyLoadImages; By default, false
+            blinkConverterSettings.EnableLazyLoadImages = true;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save and close the PDF document
+            document.Save("Output.pdf");
+            document.Close(true);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableLocalFileAccess">
+            <summary>
+             Gets or sets a value that indicates whether the local files access is enable or not. The default values is true.
+             </summary>
+             <value>If false, the converter will not load the resources from local file path. By default true
+             </value>
+             <example>
+             //Initialize the HTML to PDF converter with Blink rendering engine
+             HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+             BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+             //Set the BlinkBinaries folder path
+             blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+             //Disable LocalFileAccess; By default, true
+             blinkConverterSettings.EnableLocalFileAccess = false;
+             //Assign Blink converter settings to HTML converter
+             htmlConverter.ConverterSettings = blinkConverterSettings;
+             //Convert URL to PDF
+             PdfDocument document = htmlConverter.Convert("https://www.google.com")
+             //Save and close the PDF document
+             document.Save("Output.pdf");
+             document.Close(true);
+             //Save the output PDF document
+             MemoryStream stream = new MemoryStream();
+             document.Save(stream);
+             </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>String value representing the password of web page. By default empty</value>
+            <example>
+            // Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            blinkConverterSettings.Username = "username";
+            blinkConverterSettings.Password = "password";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.example.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>String value representing the user name of web page. By default empty</value>
+            <example>
+            // Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            blinkConverterSettings.Username = "username";
+            blinkConverterSettings.Password = "password";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.example.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Margin">
+            <summary>
+            Gets or sets the margins to a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.Graphics.PdfMargins"/>, provides margins to the PDF page. By default , PDF margin is 0.</value>
+            <example>
+            //Initialize HTML to PDF converter.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings.
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set margins
+            blinkSettings.Margin.All = 20;
+            //Assign Blink settings to HTML converter.
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert HTML string to PDF.
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.Graphics.PdfMargins"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.PdfHeader">
+            <summary>
+            Gets or sets the Header to a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> to draw into the PDF page. By default null</value>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = "/BlinkBinaries/";
+            //Create PDF page template element for header with bounds.
+            PdfPageTemplateElement header = new PdfPageTemplateElement(new RectangleF(0, 0, blinkSettings.PdfPageSize.Width, 50));
+            //Create font and brush for header element.
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 7);
+            PdfBrush brush = new PdfSolidBrush(Color.Black);
+            //Draw the header string in header template element. 
+            header.Graphics.DrawString("This is header", font, brush, PointF.Empty);
+            //Assign the header element to PdfHeader of Blink settings.
+            blinkSettings.PdfHeader = header;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.PdfFooter">
+            <summary>
+            Gets or sets the Footer to a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> to draw into the PDF page. By default null</value>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = "/BlinkBinaries/";
+            //Create PDF page template element for footer with bounds.
+            PdfPageTemplateElement footer = new PdfPageTemplateElement(new RectangleF(0, 0, blinkSettings.PdfPageSize.Width, 50));
+            //Create font and brush for header element.
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 7);
+            PdfBrush brush = new PdfSolidBrush(Color.Black);
+            //Draw the footer string in footer template element. 
+            footer.Graphics.DrawString("This is footer", font, brush, PointF.Empty);
+            //Assign the footer element to PdfFooter of Blink settings.
+            blinkSettings.PdfFooter = footer;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Orientation">
+            <summary>
+            Gets or sets the orientation of a PDF document.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageOrientation"/>, provides the orientation of the PDF page. By default Portrait</value>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = "/BlinkBinaries/";
+            //Set PDF page orientation
+            blinkSettings.Orientation = PdfPageOrientation.Landscape;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.PdfPageSize">
+            <summary>
+            Gets or sets the size of a PDF page.
+            </summary>
+             <remarks>Default value: 595 * 842 pixels (A4 size)</remarks>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = "/BlinkBinaries/";
+            //Set PDF page size
+            blinkSettings.PdfPageSize = new SizeF(595, 842);
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageSize"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.HttpRequestHeaders">
+            <summary>
+            Gets or sets the HTTP Request headers.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = @"/BlinkBinaries/";
+            //Add a bearer token to login a webpage
+            settings.HttpRequestHeaders.Add("Authorization", "bearer tokenValue");
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.example.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.PageRotateAngle">
+            <summary>
+            Gets or sets the number of degrees by which the page should be rotated clockwise when displayed or printed.
+            </summary>
+            <value>The <see cref="T:Syncfusion.Pdf.PdfPageRotateAngle"/>,provides number of degrees by which the page should be rotated clockwise when displayed or printed </value>
+            <remarks>Default value: RotateAngle0 </remarks>
+            <example>
+            //Initialize HTML to PDF converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = "/BlinkBinaries/";
+            //Set PDF page rotation angle
+            blinkSettings.PageRotateAngle = PdfPageRotateAngle.RotateAngle90;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageRotateAngle"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.BlinkPath">
+            <summary>
+            Gets or sets the Blink binaries path.
+            </summary>
+            <value> Specifies Blink assemblies path. By default bin folder</value>
+            <example>
+            //Initialize HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.ViewPortSize">
+            <summary>
+            Gets or sets the Blink view port size.
+            </summary>
+            <value>By default 1024x0 ViewPort size</value>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set Blink viewport size
+            blinkConverterSettings.ViewPortSize = new Size(800, 0);
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:System.Drawing.Size"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableBookmarks">
+            <summary>
+            A property indicating if the automatic creation of bookmarks in a PDF for the H1 to H6 HTML elements is enabled or not. By default, the automatic bookmarks creation is disabled.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set enable bookmarks
+            settings.EnableBookmarks = true;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Save and close the PDF document 
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableToc">
+            <summary>
+            A property indicating if the automatic creation of the table of contents items for the H1 to H6 HTML elements is enabled or not. By default, this property is false
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set enable toc
+            settings.EnableToc = true;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.TocPageCount">
+            <summary>
+            Gets the table of content page count.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set enable toc
+            settings.EnableToc = true;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Get Toc Page Count
+            int tocPageCount = settings.TocPageCount;
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Toc">
+            <summary>
+            Gets or sets Toc styles
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter with Blink Rendering Engine.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize HTML to PDF converter
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Assign the Blink binaries path
+            blinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Enable TOC
+            blinkSettings.EnableToc = true;
+            //Set the style for level 1(H1) items in table of contents
+            HtmlToPdfTocStyle tocstyleH1 = new HtmlToPdfTocStyle();
+            tocstyleH1.Font = new PdfStandardFont(PdfFontFamily.TimesRoman, 10, PdfFontStyle.Regular);
+            tocstyleH1.BackgroundColor = new PdfSolidBrush(new PdfColor(Color.FromArgb(68, 114, 196)));
+            tocstyleH1.ForeColor = PdfBrushes.White;
+            tocstyleH1.Padding = new PdfPaddings(5, 5, 3, 3);
+            blinkSettings.Toc.SetItemStyle(1, tocstyleH1);
+            //Assign the Blink settings
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert HTML to PDF
+            PdfDocument document = htmlConverter.Convert("input.html");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.HtmlToPdf.HtmlToPdfToc"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Cookies">
+            <summary>
+            Gets or sets the cookie collection with their name and value.
+            </summary>
+            <value> The cookies Collection </value>
+            <example>
+            // Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            // Add cookies as name and value pair
+            blinkConverterSettings.Cookies.Add("CookieName1", " CookieValue1");
+            blinkConverterSettings.Cookies.Add("CookieName2", " CookieValue2");
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.example.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.CookieCollection"/> Class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.HttpPostFields">
+            <summary>
+            Gets or sets the HTTP post collection fields.
+            </summary>
+            <remarks>
+            Presence of elements in this collection will initiate Post request or else it will proceed with Get request.
+            </remarks>
+            <example>
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            // Blink converter settings
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Assign the Blink binaries path
+            blinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Add post parameters
+            blinkSettings.HttpPostFields.Add("firstName", "Andrew");
+            blinkSettings.HttpPostFields.Add("lastName", "Fuller");
+            //Assign the Blink settings
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert HTML to PDF
+            PdfDocument document = htmlConverter.Convert("http://asp.syncfusion.com/demos/http_post_get/default.aspx");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.WindowStatus">
+            <summary>
+            Gets or sets the window status.
+            </summary>
+            <example>
+            // Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            // Set windows status.
+            blinkConverterSettings.WindowStatus = "completed";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("input.html");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableForm">
+            <summary>
+            Gets or sets enable form; If it is enabled, then HTML form fields are converted to PDF form fields in the generated PDF document. By default, false.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set enable form
+            settings.EnableForm = true;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.MediaType">
+            <summary>
+            Gets or sets the media type of Blink HTML converter.
+            </summary>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set print media type
+            blinkConverterSettings.MediaType = MediaType.Print;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.MediaType"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.ProxySettings">
+            <summary>
+            Gets or sets the proxy server settings for Blink rendering engine.
+            </summary>
+            <example>
+            //Initialize HTML converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Set Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set manual proxy settings
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkProxySettings"/> class
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.EnableOfflineMode">
+            <summary>
+            Gets or sets the offline mode. By default, false.
+            </summary>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Enable offline mode
+            blinkConverterSettings.EnableOfflineMode = true;
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com")
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.HtmlElementID">
+            <summary>
+            Gets or sets the  HTML element ID 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.SinglePageLayout">
+            <summary>
+            Use this option to render a whole HTML content into single PDF page.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set single page layout
+            settings.SinglePageLayout = SinglePageLayout.FitWidth;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.HtmlEncoding">
+            <summary>
+            Gets or sets Encoding for HTML string to PDF conversion.
+            </summary>
+            <remarks>This property will not have any effect on URL to PDF conversion</remarks>
+            <example>
+            //HTML string and Base URL 
+            string htmlText = "<html><body><img src="syncfusion_logo.gif"></img><p> Hello World</p></body></html>";
+            //Path of the resources (Images, styles, scripts) used in the htmlText.
+            string baseUrl = "C:/Temp/HTMLFiles/";
+            //Initialize HTML to PDF converter.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the Blink converter settings.
+            BlinkConverterSettings blinkSettings = new BlinkConverterSettings();
+            //Set BlinkPath
+            blinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set encoding for HTML string to PDF conversion.
+            blinkSettings.HtmlEncoding = Encoding.UTF8;
+            //Assign Blink settings to HTML converter.
+            htmlConverter.ConverterSettings = blinkSettings;
+            //Convert HTML string to PDF.
+            PdfDocument document = htmlConverter.Convert(htmlText, baseUrl);
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.TempFileName">
+            <summary>
+            Gets or sets the temporary TempFileName for the conversion.
+            </summary>
+            <example>
+            //Initialize the HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set name to the Temporary files
+            blinkConverterSettings.TempFileName = @"syncfusiontempfile";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example> 
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.CommandLineArguments">
+            <summary>
+            Gets or sets the Blink command line arguments.
+            </summary>
+            <example>
+            Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Add Blink command line arguments 
+            BlinkSettings.CommandLineArguments.Add("--no-proxy-server");
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Scale">
+            <summary>      
+            Gets or sets the scaling factor for HTML to PDF conversion.
+            </summary>
+            <remarks>Scaling factor range should from 0.1 to 2.0, otherwise the conversion gets failed</remarks>
+            <example>
+            //Initialize HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blinkconverter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = "/BlinkBinaries/";
+            //Set scaling factor
+            settings.Scale = 1.0F;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com/");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.Css">
+            <summary>
+            Gets or sets the CSS to be applied in HTML or URL before rendering to PDF.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set Blink viewport size.
+            blinkConverterSettings.ViewPortSize = new Size(1280, 0);
+            blinkConverterSettings.Margin.All = 30;
+            //Set the Html Style 
+            blinkConverterSettings.Css = "<style>\r\niframe {\r\n  display: none !important;\r\n}\r\n</style>";
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF document.
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com");
+            //Create a filestream.
+            FileStream fileStream = new FileStream("Test.pdf", FileMode.CreateNew, FileAccess.ReadWrite);
+            //Save and close the PDF document.
+            document.Save(fileStream);
+            document.Close(true);
+            </example>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverterSettings.JavaScript">
+            <summary>
+            Gets or sets the JavaScript to be executed during the HTML to PDF conversion.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter.
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter();
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set Blink viewport size.
+            blinkConverterSettings.ViewPortSize = new Size(1280, 0);
+            blinkConverterSettings.Margin.All = 30;
+            //Set the JavaScript
+            blinkConverterSettings.JavaScript = <script>const mutationCallback = function (mutationsList) {\r\n  mutationsList.forEach((mutation) => {\r\n    mutation.addedNodes.forEach((node) => {\r\n     // Do whatever we want with any dynamically created nodes in the DOM\r\n    });\r\n  });\r\n};\r\n\r\nconst observer = new MutationObserver(mutationCallback);\r\nwindow.addEventListener(\"DOMContentLoaded\", () => {\r\n  observer.observe(document.documentElement, { childList: true, subtree: true });\r\n})</script>";
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF document.
+            PdfDocument document = htmlConverter.Convert("https://www.syncfusion.com");
+            //Create a filestream.
+            FileStream fileStream = new FileStream("Test.pdf", FileMode.CreateNew, FileAccess.ReadWrite);
+            //Save and close the PDF document.
+            document.Save(fileStream);
+            document.Close(true);
+            </example>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.HtmlConverter.BlinkConverterSettings.HtmlHeader" -->
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.HtmlConverter.BlinkConverterSettings.HtmlFooter" -->
+        <member name="M:Syncfusion.HtmlConverter.BlinkConverterSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/> class.
+            </summary>
+            <example>
+            //Initialize HTML to PDF converter with Blink rendering engine
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            BlinkConverterSettings blinkConverterSettings = new BlinkConverterSettings();
+            //Set the BlinkBinaries folder path
+            blinkConverterSettings.BlinkPath = @"/BlinkBinaries/";
+            //Assign Blink converter settings to HTML converter
+            htmlConverter.ConverterSettings = blinkConverterSettings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the output PDF document
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.Pdf.Graphics.PdfMargins"/> class
+            <seealso cref="T:Syncfusion.Pdf.PdfPageTemplateElement"/> class
+            <seealso cref="T:Syncfusion.HtmlConverter.MediaType"/>
+            <seealso cref="T:Syncfusion.Pdf.PdfPageRotateAngle"/>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.HtmlRenderingEngine">
+            <summary>
+            Specifies the Rendering Engine.
+            </summary>
+            <remarks>
+            To know more details about rendering engines, refer this 
+            <see href="https://help.syncfusion.com/file-formats/pdf/converting-html-to-pdf">link</see>.
+            </remarks>
+            <example>
+            //Initialize the HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.WebKit);
+            //Initialize the WebKit converter settings
+            WebKitConverterSettings settings = new WebKitConverterSettings();
+            //Set WebKit path
+            settings.WebKitPath = @"/QtBinaries/";
+            //Assign WebKit settings to the HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the PDF document 
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <example>
+            //Initialize the HTML to PDF converter 
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize the WebKit converter settings
+            BlinkConverterSettings settings = new BlinkConverterSettings();
+            //Set Blink path
+            settings.BlinkPath = @"/BlinkBinaries/";
+            //Assign Blink settings to the HTML converter
+            htmlConverter.ConverterSettings = settings;
+            //Convert URL to PDF
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save the PDF document 
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.HtmlToPdfConverter"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.WebKitConverterSettings"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/>
+            <seealso cref="T:Syncfusion.Pdf.PdfDocument"/>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.HtmlRenderingEngine.WebKit">
+            <summary>
+            WebKit rendering engine.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.HtmlRenderingEngine.Blink">
+            <summary>
+            Blink rendering engine.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.MediaType">
+            <summary>
+            Specifies the media type for HTML conversion.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.MediaType.Print">
+            <summary>
+            Print media type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.MediaType.Screen">
+            <summary>
+            Screen media type
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.WebKitProxyType">
+            <summary>
+            Type of proxy server
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.WebKitProxyType.None">
+            <summary>
+            No proxy type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.WebKitProxyType.Http">
+            <summary>
+            Http proxy type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.WebKitProxyType.HttpCaching">
+            <summary>
+            Http caching proxy type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.WebKitProxyType.Socks5">
+            <summary>
+            Socks5 proxy type
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.Blink.AddTagOptions">
+            <summary>
+            Options used by <see cref="!:IPage.AddScriptTagAsync(AddTagOptions)"/> &amp; <see cref="!:IPage.AddStyleTagAsync(AddTagOptions)"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.Blink.AddTagOptions.Url">
+            <summary>
+            Url of a script to be added.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.Blink.AddTagOptions.Path">
+            <summary>
+            Path to the JavaScript file to be injected into frame. If its a relative path, then it is resolved relative to <see cref="M:System.IO.Directory.GetCurrentDirectory"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.Blink.AddTagOptions.Content">
+            <summary>
+            JavaScript to be injected into the frame.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.Blink.AddTagOptions.Type">
+            <summary>
+            Script type. Use <c>module</c> in order to load a Javascript ES2015 module.
+            </summary>
+            <seealso href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.Blink.AddTagOptions.Id">
+            <summary>
+            Id of the script.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.Blink.Frame.AddScriptTagAsync(Syncfusion.HtmlConverter.Blink.AddTagOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.EnableForm">
+            <summary>
+            Gets or sets the value is indicating EnableForm is enable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.EnableBookmarks">
+            <summary>
+            Gets or sets the value is indicating EnableBookmarks is enable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.HtmlElementID">
+            <summary>
+            Gets or sets the HtmlElementID 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.BlinkLayoutResult">
+            <summary>
+            Gets or sets the PdfLayoutResult value
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.IsLayoutResult">
+            <summary>
+            Gets or sets the value is indicating PdfLayoutResult is enable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.CommandLineArguments">
+            <summary>
+            Gets or sets the Blink command line arguments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.EnableToc">
+            <summary>
+            Gets or sets the value is indicating EnableToc is enable or not
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.Toc">
+            <summary>
+            Gets or sets TOC styles
+            /// <para>This property is used internally and should not be used directly.</para>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.HtmlHeader">
+            <summary>
+            Gets or sets HtmlHeader
+            /// <para>This property is used internally and should not be used directly.</para>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.HtmlFooter">
+            <summary>
+            Gets or sets HtmlFooter
+            /// <para>This property is used internally and should not be used directly.</para>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.Css">
+            <summary>
+            Gets or sets the CSS to be applied in HTML or URL before rendering to PDF.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.HtmlConverter.BlinkConverter.JavaScript">
+            <summary>
+            Gets or sets the JavaScript to be executed during the HTML to PDF conversion.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.HtmlConverter.BlinkConverter.DeleteFile(System.String)">
+            <summary>
+            Delete the file
+            </summary>
+        </member>
+        <member name="T:Syncfusion.HtmlConverter.BlinkProxyType">
+            <summary>
+            Type of proxy server
+            </summary>
+            /// <example>
+            <code lang = "C#">
+            //Initialize HTML converter
+            HtmlToPdfConverter htmlConverter = new HtmlToPdfConverter(HtmlRenderingEngine.Blink);
+            //Initialize Blink converter settings
+            BlinkConverterSettings BlinkSettings = new BlinkConverterSettings();
+            //Assign the Blink path
+            BlinkSettings.BlinkPath = @"/BlinkBinaries/";
+            //Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1";
+            BlinkSettings.ProxySettings.PortNumber = 8080;
+            //Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http;
+            //Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings;
+            //Convert url to pdf
+            PdfDocument document = htmlConverter.Convert("https://www.google.com");
+            //Save and close the PDF document
+            document.Save("Output.pdf");
+            document.Close(true);
+            </code>
+            <code lang= "VB">
+            'Initialize HTML converter
+            Dim htmlConverter As New HtmlToPdfConverter(HtmlRenderingEngine.Blink)
+            'Initialize Blink converter settings
+            Dim BlinkSettings As New BlinkConverterSettings()
+            'Assign the Blink path
+            BlinkSettings.BlinkPath = "/BlinkBinaries/"
+            'Set manual proxy with proxy server host and port number.
+            BlinkSettings.ProxySettings.HostName = "127.0.0.1"
+            BlinkSettings.ProxySettings.PortNumber = 8080
+            'Set proxy server type
+            BlinkSettings.ProxySettings.Type = BlinkProxyType.Http
+            'Assign Blink settings to HTML converter
+            htmlConverter.ConverterSettings = BlinkSettings
+            'Convert url to pdf
+            Dim document As PdfDocument = htmlConverter.Convert("https://www.google.com")
+            'Save and close the PDF document
+            document.Save("Output.pdf")
+            document.Close(True)
+            </code>
+            </example>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkProxySettings"/>
+            <seealso cref="T:Syncfusion.HtmlConverter.BlinkConverterSettings"/>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.BlinkProxyType.None">
+            <summary>
+            No proxy
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.BlinkProxyType.Http">
+            <summary>
+            Http proxy type
+            </summary>
+        </member>
+        <member name="F:Syncfusion.HtmlConverter.BlinkProxyType.Socks5">
+            <summary>
+            Socks5 proxy type
+            </summary>
+        </member>
+        <member name="P:System.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:System.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_securityprotocolnotsupported">
+            <summary>
+              Looks up a localized string similar to The requested security protocol is not supported..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_uri_NotAbsolute">
+            <summary>
+              Looks up a localized string similar to This operation is not supported for a relative URI..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_AcceptUnsupportedProtocol">
+            <summary>
+              Looks up a localized string similar to The WebSocket client request requested &apos;{0}&apos; protocol(s), but server is only accepting &apos;{1}&apos; protocol(s)..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_Websockets_AlreadyOneOutstandingOperation">
+            <summary>
+              Looks up a localized string similar to There is already one outstanding &apos;{0}&apos; call for this WebSocket instance. ReceiveAsync and SendAsync can be called simultaneously, but at most one outstanding operation for each of them is allowed at the same time..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_AlreadyStarted">
+            <summary>
+              Looks up a localized string similar to The WebSocket has already been started..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_Argument_InvalidMessageType">
+            <summary>
+              Looks up a localized string similar to The message type &apos;{0}&apos; is not allowed for the &apos;{1}&apos; operation. Valid message types are: &apos;{2}, {3}&apos;. To close the WebSocket, use the &apos;{4}&apos; operation instead. .
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_ArgumentOutOfRange_TooSmall">
+            <summary>
+              Looks up a localized string similar to The argument must be a value greater than {0}..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_Generic">
+            <summary>
+              Looks up a localized string similar to An internal WebSocket error occurred. Please see the innerException, if present, for more details. .
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidCharInProtocolString">
+            <summary>
+              Looks up a localized string similar to The WebSocket protocol &apos;{0}&apos; is invalid because it contains the invalid character &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidCloseStatusCode">
+            <summary>
+              Looks up a localized string similar to The close status code &apos;{0}&apos; is reserved for system use only and cannot be specified when calling this method..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidCloseStatusDescription">
+            <summary>
+              Looks up a localized string similar to The close status description &apos;{0}&apos; is too long. The UTF8-representation of the status description must not be longer than {1} bytes..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidEmptySubProtocol">
+            <summary>
+              Looks up a localized string similar to Empty string is not a valid subprotocol value. Please use \&quot;null\&quot; to specify no value..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidResponseHeader">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos; header value &apos;{1}&apos; is invalid..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidState">
+            <summary>
+              Looks up a localized string similar to The WebSocket is in an invalid state (&apos;{0}&apos;) for this operation. Valid states are: &apos;{1}&apos;.
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_InvalidState_ClosedOrAborted">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos; instance cannot be used for communication because it has been transitioned into the &apos;{1}&apos; state..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_NoDuplicateProtocol">
+            <summary>
+              Looks up a localized string similar to Duplicate protocols are not allowed: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_NotConnected">
+            <summary>
+              Looks up a localized string similar to The WebSocket is not connected..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_ReasonNotNull">
+            <summary>
+              Looks up a localized string similar to The close status description &apos;{0}&apos; is invalid. When using close status code &apos;{1}&apos; the description must be null..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_Scheme">
+            <summary>
+              Looks up a localized string similar to Only Uris starting with &apos;ws://&apos; or &apos;wss://&apos; are supported..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_WebSockets_UnsupportedPlatform">
+            <summary>
+              Looks up a localized string similar to The WebSocket protocol is not supported on this platform..
+            </summary>
+        </member>
+        <member name="P:System.Strings.net_webstatus_ConnectFailure">
+            <summary>
+              Looks up a localized string similar to Unable to connect to the remote server.
+            </summary>
+        </member>
+        <member name="P:System.Strings.NotReadableStream">
+            <summary>
+              Looks up a localized string similar to The base stream is not readable..
+            </summary>
+        </member>
+        <member name="P:System.Strings.NotWriteableStream">
+            <summary>
+              Looks up a localized string similar to The base stream is not writeable..
+            </summary>
+        </member>
+    </members>
+</doc>

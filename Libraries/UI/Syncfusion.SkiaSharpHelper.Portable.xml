@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SkiaSharpHelper.Portable</name>
+    </assembly>
+    <members>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_types">
+            <summary>
+            Specifies the character types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_textOrder">
+            <summary>
+            Specifies the text order (RTL or LTR).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_length">
+            <summary>
+            Specifies the text length.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_result">
+            <summary>
+            Specifies the resultant types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_levels">
+            <summary>
+            Specifies the resultant levels.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.m_rtlCharacterTypes">
+            <summary>
+            Specifies the RTL character types.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.L">
+            <summary>
+            Left-to-Right (Non-European or non-Arabic digits).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.LRE">
+            <summary>
+            Left-to-Right Embedding
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.LRO">
+            <summary>
+            Left-to-Right Override
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.R">
+            <summary>
+            Right-to-Left (Hebrew alphabet, and related punctuation).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.AL">
+            <summary>
+            Right-to-Left Arabic 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.RLE">
+            <summary>
+            Right-to-Left Embedding.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.RLO">
+            <summary>
+            Right-to-Left Override
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.PDF">
+            <summary>
+            Pop Directional Format
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.EN">
+            <summary>
+            European Number (European digits, Eastern Arabic-Indic digits).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.ES">
+            <summary>
+            European Number Separator (Plus sign, Minus sign).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.ET">
+            <summary>
+            European Number Terminator (Degree sign, currency symbols).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.AN">
+            <summary>
+            Arabic Number (Arabic-Indic digits, Arabic decimal and thousands separators).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.CS">
+            <summary>
+            Common Number Separator (Colon, Comma, Full Stop, No-Break Space.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.NSM">
+            <summary>
+            Nonspacing Mark (Characters with the General_Category values).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.BN">
+            <summary>
+            Boundary Neutral (Default ignorables, non-characters, and control characters, other than those explicitly given other types.)
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.B">
+            <summary>
+            Paragraph Separator (Paragraph separator, appropriate Newline Functions, higher-level protocol paragraph determination).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.S">
+            <summary>
+            	Segment Separator (tab).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.WS">
+            <summary>
+            Whitespace (Space, Figure space, Line separator, Form feed, General Punctuation spaces).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.ON">
+            <summary>
+            Other Neutrals (All other characters, including object replacement character).
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SkiaSharpHelper.Portable.RTLCharacters.CharTypes">
+            <summary>
+            RTL character types.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.CompositingMode">
+            <summary>
+            Specifies how the source colors are combined with the background colors.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.CompositingQuality">
+            <summary>
+            Specifies the quality level to use during compositing.
+            </summary>     
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.PixelOffsetMode">
+            <summary>
+            Specifies how pixels are offset during rendering.
+            </summary>     
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Graphics.ClipBounds">
+            New Property
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Graphics.IsRtfTextImageConversion">
+            <summary>
+            Checks whether the current conversion is RtfText to Image or not.
+            </summary>
+            <remarks>Returns true, if current conversion is RtfText to Image; Otherwise false.</remarks>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.ResetTransform">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,System.IO.Stream,Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Brush,Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.StringFormat)">
+            <summary>
+            Draw string using the font 
+            </summary>
+            <param name="text">Text which should get drawn.</param>
+            <param name="font">Font to be used for rendering</param>
+            <param name="stream">Alternate font stream </param>
+            <param name="brush">Brush used to draw the string</param>
+            <param name="rectangle">Position of the text with width and height</param>
+            <param name="stringFormat">Formatting options of the font</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,System.IO.Stream,Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Brush,Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.StringFormat,Syncfusion.Office.FontScriptType)">
+             <summary>
+             Draw the string for Word to Image conversion
+             </summary>
+            <remarks>This method used for DocIO side alone for Word to Image</remarks>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.CheckForArabicOrHebrew(System.String)">
+            <summary>
+            Checks for Hebrew or Arabic characters in the Unicode string.
+            </summary>
+            <param name="unicodeText">Input Unicode string.</param>
+            <returns>True if the Unicode string contains Arabic or Hebrew characters. False otherwise.</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.DocIOHelper.IBrush,System.Single,System.Single,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Brush,Syncfusion.Drawing.PointF,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(Syncfusion.Drawing.DocIOHelper.IImage,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Draws the specified Image at the specified location and with the specified size.
+            </summary>
+            <param name="image">Image to draw.</param>
+            <param name="x">The x-coordinate of the upper-left corner of the drawn image.</param>
+            <param name="y">The y-coordinate of the upper-left corner of the drawn image.</param>
+            <param name="width">Width of the drawn image.</param>
+            <param name="height">Height of the drawn image.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(System.Byte[],Syncfusion.Drawing.Rectangle)">
+            <summary>
+            Draws the specified Image bytes at the specified location and with the specified size.
+            </summary>
+            <param name="imageBytes">Image bytes to draw.</param>
+            <param name="rectangle">Specifies the portion of the image to draw.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureText(System.String,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.StringFormat)">
+            <summary>
+            Measure text using TTF font in linux
+            </summary>
+            <param name="text"></param>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="fontStyle"></param>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.IsUnicodeText(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.StringFormat,Syncfusion.Drawing.SkiaSharpHelper.FontExtension)">
+            <summary>
+            Measure string using the TTF Font.
+            </summary>
+            <param name="text">Text which should get measured.</param>
+            <param name="font">Font to be used for measuring.</param>
+            <param name="format">Formatting options of the font.</param>
+            <param name="fontImpl">FontExtension to be used for measuring.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,System.IO.Stream,Syncfusion.Drawing.Font,Syncfusion.Drawing.StringFormat,System.Boolean)">
+            <summary>
+            Measure string using the font
+            </summary>
+            <param name="text">Text which should get drawn.</param>
+            <param name="stream">Alternate font stream </param>
+            <param name="font">Font to be used for rendering</param>
+            <param name="stringFormat">Formatting options of the font</param>
+            <param name="isSkiaMeasuring">Represent whether current measuring is SkiaSharp measuring or TTF measuring.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,System.IO.Stream,Syncfusion.Drawing.Font,Syncfusion.Drawing.StringFormat)">
+            <summary>
+            Measure string using the font
+            </summary>
+            <param name="text">Text which should get drawn.</param>
+            <param name="stream">Alternate font stream </param>
+            <param name="font">Font to be used for rendering</param>
+            <param name="stringFormat">Formatting options of the font</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.ExportAsImage(Syncfusion.Drawing.ImageFormat,System.IO.MemoryStream)">
+            <summary>
+            Export a current Graphics object as Image.
+            </summary>
+            <param name="imageFormat">Represents a image format to export.</param>
+            <param name="memoryStream">Represent a memoty stream to store the exported image.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawBezier(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawBezier(Syncfusion.Drawing.SkiaSharpHelper.Pen,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawBeziers(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawEllipse(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.Rectangle)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.FillEllipse(Syncfusion.Drawing.SkiaSharpHelper.Brush,System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.FillEllipse(Syncfusion.Drawing.SkiaSharpHelper.Brush,Syncfusion.Drawing.Rectangle)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawEllipse(Syncfusion.Drawing.SkiaSharpHelper.Pen,System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawLines(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawLines(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.Point[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawPolygon(Syncfusion.Drawing.SkiaSharpHelper.Pen,Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.FillPolygon(Syncfusion.Drawing.DocIOHelper.IBrush,Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.FillPath(Syncfusion.Drawing.DocIOHelper.IBrush,Syncfusion.Drawing.DocIOHelper.IGraphicsPath)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Brush,Syncfusion.Drawing.PointF)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Brush,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.DocIOHelper.IBrush,Syncfusion.Drawing.RectangleF)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(Syncfusion.Drawing.Image,Syncfusion.Drawing.PointF[],Syncfusion.Drawing.Rectangle,Syncfusion.Drawing.GraphicsUnit,Syncfusion.Drawing.SkiaSharpHelper.ImageAttributes)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(Syncfusion.Drawing.DocIOHelper.IImage,Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.GraphicsUnit)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(Syncfusion.Drawing.DocIOHelper.IImage,Syncfusion.Drawing.Rectangle,System.Single,System.Single,System.Single,System.Single,Syncfusion.Drawing.GraphicsUnit,Syncfusion.Drawing.DocIOHelper.IImageAttributes)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.DrawImage(Syncfusion.Drawing.Image,Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.SizeF,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,Syncfusion.Drawing.Font,System.Int32)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,Syncfusion.Drawing.Font,System.Int32,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MeasureString(System.String,Syncfusion.Drawing.Font,Syncfusion.Drawing.SizeF,Syncfusion.Drawing.StringFormat,System.Int32@,System.Int32@)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.ResetClip">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.IntersectClip(Syncfusion.Drawing.RectangleF)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.BeginContainer">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.EndContainer(Syncfusion.Drawing.SkiaSharpHelper.GraphicsContainer)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Graphics.MultiplyTransform(Syncfusion.Drawing.Matrix)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.#ctor(System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit,Syncfusion.Office.FontScriptType,System.Boolean@)">
+            <summary>
+            Create a FontExtension object with specified font name, size and style.
+            </summary>
+            <param name="fontName">Represent a font name.</param>
+            <param name="fontSize">Represent a font size.</param>
+            <param name="style">Represent a font style.</param>
+            <param name="unit">Represent a graphics unit.</param>
+            <param name="scriptType">Represent a script type.</param>
+            <param name="hasStylesAndWeights">Represent whether created font (SkTypeFace) has proper style and weight.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.InitializeSkiaSharpProperties(System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit)">
+            <summary>
+            Initialize the SkiaSharp Properties for creating font extension
+            </summary>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="style"></param>
+            <param name="unit"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.InitializeSkiaSharpProperties(System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit,System.Boolean@)">
+            <summary>
+            Initialize the SkiaSharp Properties for creating font extension
+            </summary>
+            <param name="fontName">Represent a font name.</param>
+            <param name="fontSize">Represent a font size.</param>
+            <param name="style">Represent a font style.</param>
+            <param name="unit">Represent a graphics unit.</param>
+            <param name="hasStylesAndWeights">Represent whether created font (SkTypeFace) has proper style and weight.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.InitializeTTFFont(System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit)">
+            <summary>
+            Initialize the TTF font for creating font extension
+            </summary>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="style"></param>
+            <param name="unit"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.#ctor(System.IO.Stream,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit,System.Boolean)">
+            <summary>
+            Create font from stream [Only for font substitution]
+            </summary>
+            <param name="stream">Font stream given.</param>
+            <param name="fontSize">Font size.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.GetTypeface(System.String,Syncfusion.Drawing.FontStyle,System.Boolean@)">
+            <summary>
+            Get the SkiaSharp typeface.
+            </summary>
+            <param name="fontName">Represent a font name.</param>
+            <param name="style">Represent a font style.</param>
+            <param name="hasStylesAndWeights">Represent whether created font (SkTypeFace) has proper style and weight.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.#ctor(System.IO.Stream,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit)">
+            <summary>
+            Create font from stream [Only for font substitution]
+            </summary>
+            <param name="stream">Font stream given.</param>
+            <param name="fontSize">Font size.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.#ctor(System.IO.Stream,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit,Syncfusion.Office.FontScriptType)">
+            <summary>
+            Create font from stream [Only for font substitution]
+            </summary>
+            <param name="stream">Font stream given.</param>
+            <param name="fontSize">Font size.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.InitlaizeFontSubsSkiaProperties(System.IO.Stream,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit)">
+            <summary>
+            Initlaize Skiasharp Properties for Font extension [Only for font substitution]
+            </summary>
+            <param name="stream"></param>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="fontStyle"></param>
+            <param name="unit"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.InitializeFontSubsTTFFont(System.IO.Stream,System.String,System.Single,Syncfusion.Drawing.FontStyle,Syncfusion.Drawing.GraphicsUnit)">
+            <summary>
+            Initlaize TTF font for Font extension [Only for font substitution]
+            </summary>
+            <param name="stream"></param>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+            <param name="fontStyle"></param>
+            <param name="unit"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.GetSKFontName(System.String,SkiaSharp.SKTypefaceStyle,SkiaSharp.SKFontStyleWeight@,SkiaSharp.SKFontStyleSlant@,SkiaSharp.SKFontStyleWidth@)">
+            <summary>
+            Get SKFontname.
+            </summary>
+            <param name="fontName"></param>
+            <param name="style"></param>
+            <param name="sKFontStyleWeight"></param>
+            <param name="sKFontStyleSlant"></param>
+            <param name="sKFontStyleWidth"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.ModifyFontName(System.String@,SkiaSharp.SKFontStyleWeight@)">
+            <summary>
+            Modifies the font name and style weight.
+            </summary>
+            <param name="fontName">Represent a font name.</param>
+            <param name="sKFontStyleWeight">Represent a font weight.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.GetTypeface(System.String,SkiaSharp.SKTypefaceStyle,System.Boolean@)">
+            <summary>
+            Get the SkiaSharp typeface.
+            </summary>
+            <param name="fontName">Represent a font name.</param>
+            <param name="style">Represent a font SKTypeface style.</param>
+            <param name="hasStylesAndWeights">Represent whether created font (SkTypeFace) has proper style and weight.</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.IsContainGlyphs(System.String)">
+            <summary>
+            Check whether all the characters (glyphs) of input text is available in input font or not.
+            </summary>
+            <param name="inputText">Represent the input text to check.</param>
+            <returns>Returns true, if all input character glyphs are available in input font; Otherwise false.</returns>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.Key">
+            <summary>
+            Gets a Key value for the Dictionary.
+            </summary>
+            <remarks>Represents a Key value of FontStreams, TypeFaceCache, and TTFFontCache collections.</remarks>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.HasFontStream">
+            <summary>
+            Check whether the fonts stream is present in the font streams collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.GetFontStyleValue(Syncfusion.Drawing.FontStyle)">
+            <summary>
+            Gets a font style value to generate a font collection key.
+            </summary>
+            <param name="fontStyle">Represent a input font style.</param>
+            <returns>Returns a font style value to generate a font collection key.</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.FontExtension.MeasureText(System.String,Syncfusion.Office.FontScriptType)">
+            <summary>
+            SkiaSharp.HarfBuzz Measuring
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.FontFamily.Name">
+            New Property
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Image.#ctor(SkiaSharp.SKBitmap,System.Int32,System.Int32)">
+            <summary>
+            Create the new bitmap with specified width and height
+            </summary>
+            <param name="sKBitmap">Represent the source bitmap</param>
+            <param name="width">Represent the width of the new bitmap</param>
+            <param name="height">Represent the height of the new bitmap</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Image.GetImageFormat(Syncfusion.Drawing.ImageFormat)">
+            <summary>
+            Gets the equivalent SKEncodedImageFormat for the input ImageFormat.
+            </summary>
+            <param name="imageFormat">Image format used for encoding image.</param>
+            <returns>Equivalent SKEncodedImageFormat for the input ImageFormat.</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Bitmap.#ctor(Syncfusion.Drawing.SkiaSharpHelper.Image,System.Int32,System.Int32)">
+            <summary>
+            Create the new bitmap with specified width and height
+            </summary>
+            <param name="sKBitmap">Represent the source bitmap</param>
+            <param name="width">Represent the width of the new bitmap</param>
+            <param name="height">Represent the height of the new bitmap</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Bitmap.SetResolution(System.Single,System.Single)">
+            New Method added
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Bitmap.MakeTransparent(Syncfusion.Drawing.Color)">
+            New Method added
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Pen.#ctor(Syncfusion.Drawing.SkiaSharpHelper.Brush)">
+            New Constructor
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Pen.#ctor(Syncfusion.Drawing.SkiaSharpHelper.Brush,System.Single)">
+            New Constructor
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.Brush">
+            <summary>
+            Gets or sets the Brush that determines attributes of this Pen.
+            </summary>
+            <remarks>Just added to avoid a compilation issue and still, we do not provide a support for this property.</remarks>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.LineJoin">
+            New Property
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.DashCap">
+            Not Supported
+            <summary>
+             Gets or sets the cap style used at the end of the dashes that make up dashed lines drawn with this Pen.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.EndCap">
+            New Property
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.StartCap">
+            New Property
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.Pen.Alignment">
+            New Property
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.PathData">
+            New Property
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.#ctor(Syncfusion.Drawing.SkiaSharpHelper.FillMode)">
+            New Constructor
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.#ctor">
+            New Constructor
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.#ctor(Syncfusion.Drawing.PointF[],System.Byte[])">
+            New Constructor
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddCurve(Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddCurve(Syncfusion.Drawing.Point[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.GetCurveControlPoints(SkiaSharp.SKPoint[],SkiaSharp.SKPoint[]@,SkiaSharp.SKPoint[]@)">
+            <summary>
+            Get open-ended Bezier Spline Control Points (Equal to GDI AddCurve Method).
+            </summary>
+            <param name="points">Input Knot Bezier spline points.</param>
+            <param name="firstControlPoints">Output First Control points
+            array of knots.Length - 1 length.</param>
+            <param name="secondControlPoints">Output Second Control points
+            array of knots.Length - 1 length.</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="points"/>
+            parameter must be not null.</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="points"/>
+            array must contain at least two points.</exception>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.GetFirstControlPoints(System.Double[])">
+            <summary>
+            Solves a tridiagonal system for one of coordinates (x or y)
+            of first Bezier control points. 
+            </summary>
+            <param name="rhs">Right hand side vector value.</param>
+            <returns>Solution vector value.</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddBeziers(Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddBezier(Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddBezier(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddEllipse(Syncfusion.Drawing.Rectangle)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddEllipse(System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddPie(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddPie(Syncfusion.Drawing.Rectangle,System.Single,System.Single)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddRectangle(Syncfusion.Drawing.RectangleF)">
+            <summary>
+            Add rectangle with given (float) value without any conversion 
+            </summary>
+            <param name="rectangle"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddPolygon(Syncfusion.Drawing.PointF[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddPolygon(Syncfusion.Drawing.Point[])">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddString(System.String,Syncfusion.Drawing.SkiaSharpHelper.FontFamily,System.Int32,System.Single,Syncfusion.Drawing.PointF,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddString(System.String,System.String,System.Int32,System.Single,Syncfusion.Drawing.PointF,Syncfusion.Drawing.StringFormat)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.AddPath(Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath,System.Boolean)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.CloseFigure">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.CloseAllFigures">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.StartFigure">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath.GetLastPoint">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Extension.Rotate(Syncfusion.Drawing.Matrix,System.Int32,Syncfusion.Drawing.MatrixOrder)">
+            New Method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Extension.GetArrayOfSKColors(Syncfusion.Drawing.Color[])">
+            <summary>
+            Create the array of SKColor with specified array of Syncfusion Color
+            </summary>
+            <param name="colors">Represent the array of Syncfusion Color</param>
+            <returns>Return the array of SKColor with specified Syncfusion Color</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Extension.GetReversedColors(Syncfusion.Drawing.Color[])">
+            <summary>
+            Reverse the specified color array
+            </summary>
+            <param name="colors">Represent the color array to get reverse</param>
+            <returns>Return the reversed color array</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Extension.GetHeight(Syncfusion.Drawing.Font,Syncfusion.Drawing.SkiaSharpHelper.Graphics)">
+            New method
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.Extension.IsHarfBuzzSupportedScript(Syncfusion.Office.FontScriptType)">
+            <summary>
+            Checks whether the given script is supported by SkiaSharp.HarfBuzz
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.ColorBlend">
+            New Class
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.GraphicsContainer">
+            New Class
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.ImageAttributes">
+            New Class
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.ImageAttributes.Transparency">
+            <summary>
+            Represent the alpha value of ImageAttributes
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.ImageAttributes.SetGamma(System.Single,Syncfusion.Drawing.ColorAdjustType)">
+            <summary>
+            Sets the gamma value for a specified category.
+            </summary>
+            <param name="gamma">The gamma correction value.</param>
+            <param name="type">An element of the ColorAdjustType enumeration that specifies the category for which the gamma value is set.</param>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush">
+            <summary>
+            Class To Create Radial Gradient Brush For Applying Radial Gradient fill
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_surroundColors">
+            <summary>
+            Default Gradient colors to be applied
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_rectangle">
+            <summary>
+            The Rectangle for which the Color To be applied and it location is stored in it.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_interpolationColors">
+            <summary>
+            Colors And position obtained from the Gradient stops for the Radial Fill
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_foculaScales">
+            <summary>
+            for focusing the Colors scales
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_centerPoint">
+            <summary>
+            To Store the Center point of the Gradient fill which type and where to applied.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.m_path">
+            <summary>
+            The Graphics path to add the shape path to it.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.#ctor(Syncfusion.Drawing.SkiaSharpHelper.GraphicsPath)">
+            <summary>
+            constructor for Creating the instance of object with the given details
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.SurroundColor">
+            <summary>
+            property To the access m_surroround color field
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.Rectangle">
+            <summary>
+            Property to access the field rectangle
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.InterpolationColors">
+            <summary>
+            Property to access the Gradient stop colors and update the brush
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.FoculScales">
+            <summary>
+            Property to access the field of focus sclaes
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.CenterPoint">
+            <summary>
+            property to access the center point and update the brush while setting the center point
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.CenterColor">
+            <summary>
+            the default color for radial gradient brush.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.GetRadialCenterPoint(Syncfusion.Drawing.Rectangle,Syncfusion.Drawing.RectangleF)">
+            <summary>
+            To calculate the center point based on the fill type pof the Radial
+            </summary>
+            <param name="rect"></param>
+            <param name="bounds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.RadialGradientBrush.UpdateRadialGradientBrush">
+            <summary>
+            Method to update the Radial Gradient brush
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.PathGradientBrush">
+            New Class
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.PathGradientBrush.UpdatePathGradientBrush">
+            <summary>
+            Update the PathGradientBrush with updated values
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush">
+            New Class
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.#ctor(Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.Color,Syncfusion.Drawing.Color,System.Single,System.Boolean)">
+            <summary>
+            Create LinearGradientBrush with rotation
+            </summary>
+            <param name="rect">Represent the rectangle bounds</param>
+            <param name="color1">Represent the first color</param>
+            <param name="color2">Represent the second color</param>
+            <param name="angle">Represent the rotation angle</param>
+            <param name="isAngleScaleable"></param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.UpdateLinearGradientBrush">
+            <summary>
+            Update the LinearGradientBrush with updated values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.GetGradientPointsWithAngle(System.Single,System.Single,System.Single)">
+            <summary>
+            Get the gradient points with specified angle
+            </summary>
+            <param name="xRadius">Represent the x radius</param>
+            <param name="yRadius">Represent the y radius</param>
+            <param name="angle">Represent the angle to be rotated</param>
+            <returns>Return the rotated gradient points</returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.GetGradientPoints(System.Single,Syncfusion.Drawing.RectangleF)">
+            <summary>
+            Get the linear gradient points
+            </summary>
+            <param name="angle">Represent the reotation angle</param>
+            <param name="bounds">Represent the bound of parent element</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.GetGradientPointsFromAngle(System.Single,Syncfusion.Drawing.RectangleF)">
+            <summary>
+            Method to Calculate the Angle For the Linear Fill from the Rectangle size.
+            </summary>
+            <param name="angle"></param>
+            <param name="bounds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.ChoosePoint(System.Single,Syncfusion.Drawing.RectangleF)">
+            <summary>
+            Method to calculate the points for the fill from angle
+            </summary>
+            <param name="angle"></param>
+            <param name="bounds"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.SubPoints(Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF)">
+            <summary>
+            To subtract one point from one point and return a new point
+            </summary>
+            <param name="point1"></param>
+            <param name="point2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.MulPoints(Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF)">
+            <summary>
+            Multiply two points and returning the result point.
+            </summary>
+            <param name="point1"></param>
+            <param name="point2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.AddPoints(Syncfusion.Drawing.PointF,Syncfusion.Drawing.PointF)">
+            <summary>
+            Method to Add two points and returning the new calculated point.
+            </summary>
+            <param name="point1"></param>
+            <param name="point2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.LinearGradientBrush.MulPoint(Syncfusion.Drawing.PointF,System.Single)">
+            <summary>
+            method for multiplying a value to the points and return the calculated new point.
+            </summary>
+            <param name="point"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush">
+            New class
+             <summary>
+             TextureBrush to create the picture and texture fill
+             </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush.#ctor(Syncfusion.Drawing.SkiaSharpHelper.Image,Syncfusion.Drawing.RectangleF,Syncfusion.Drawing.SkiaSharpHelper.ImageAttributes)">
+            <summary>
+            Create the texture brush with source image and parent element bounds
+            </summary>
+            <param name="image">Represent the source image</param>
+            <param name="dstRect">Represent the parent element bounds</param>
+            <param name="imageAttr">Represent the image properties</param>
+        </member>
+        <member name="P:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush.WrapMode">
+            <summary>
+            Represent the wrap mode of image
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush.TranslateTransform(System.Single,System.Single)">
+            <summary>
+            Translate the texture brush with specified values
+            </summary>
+            <param name="dx">Represent the X position to translate</param>
+            <param name="dy">Represent the Y position to translate</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush.ScaleTransform(System.Single,System.Single)">
+            <summary>
+            Scale the texture brush with specified values
+            </summary>
+            <param name="sx">Represent the X position to scale</param>
+            <param name="sy">Represent the Y position to scale</param>
+        </member>
+        <member name="M:Syncfusion.Drawing.SkiaSharpHelper.TextureBrush.UpdateTextureBrush">
+            <summary>
+            Update the textur brush with updated values
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Drawing.SkiaSharpHelper.PathData">
+            New Class
+        </member>
+    </members>
+</doc>

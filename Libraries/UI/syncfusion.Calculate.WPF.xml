@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Calculate.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Calculate.CalcQuick">
+            <summary>
+            A class that allows you to quickly add calculation support for controls on a form, or usercontrol.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.CalcQuick.RegisterControlArray(System.Windows.Controls.Control[])">
+            <summary>
+            A Virtual method that registers an array of controls as formula objects in this CalcQuick instance.
+            </summary>
+            <param name="controls">The control array.</param>
+        </member>
+        <member name="E:Syncfusion.Windows.Calculate.CalcQuick.TextChanged">
+            <summary>
+            Have a textbox to handle the textchanged event 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.CalcQuick.RegisterControl(System.Windows.Controls.Control)">
+            <summary>
+            Used to register a control as a calculation object in this CalcQuick instance.
+            </summary>
+            <param name="c">The control to register.</param>
+            <remarks>
+            To reference this calculation object from another calculation in this CalcQuick
+            object, you use the Control.Name string. The value of this calculation object is
+            bound to the Control.Text property. 
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.Windows.Calculate.SingleVariableExpressionConverter">
+            <summary>
+            Use this IValueConverter instance to convert a value using a formula or expression in XAML.
+            </summary>
+            <remarks>
+            <para>
+            Note that the formula variable name is set to "a" by default and you can change it through
+            the <see cref="P:Syncfusion.Windows.Calculate.SingleVariableExpressionConverter.FormulaVariableName"/> property. You can then refer to the binding source value in the formula as "[a]".
+            </para>
+            <example>
+            Here is a XAML sample:
+                <TextBox Text="{Binding ElementName=textbox1, Path=Text, Mode=OneWay,
+                    Converter={StaticResource sveConverter}, ConverterParameter=[a] ^ 2}"/>
+            </example>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Calculate.SingleVariableExpressionConverter.FormulaVariableName">
+            <summary>
+            Gets or sets the formula name
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.SingleVariableExpressionConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Used to convert the values.
+            </summary>
+            <param name="value">Object values.</param>
+            <param name="targetType">type of the target.</param>
+            <param name="parameter">parameter value.</param>
+            <param name="culture">culture values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.SingleVariableExpressionConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Used to convert back the values.
+            </summary>
+            <param name="value">object value</param>
+            <param name="targetType">type of target</param>
+            <param name="parameter">parameter value.</param>
+            <param name="culture">culture values</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Calculate.MultiVariableExpressionConverter">
+            <summary>
+            Use this IMultiValueConverter instance to convert a set of values into a result using a formula.
+            </summary>
+            <remarks>
+            <para>
+            Note that the first value should be referred to as "[a]" in the formula, the 2nd value as "[b]" and so on. 
+            </para>
+            <example>
+            Here is a XAML sample:
+               <StackPanel Orientation="Vertical">
+                   <TextBox Name="tb2" Text="10"></TextBox>
+                   <TextBox Name="tb3" Text="10"></TextBox>
+                   <TextBox Name="tb4" Text="10"></TextBox>
+                   <TextBox Name="tb5" Text="10"></TextBox>
+               </StackPanel>
+               
+               <TextBox>
+                   <TextBox.Text>
+                       <MultiBinding Converter="{StaticResource multiVarExpConverter}">
+                           <MultiBinding.ConverterParameter>[a]+[b]+[c]+[d]</MultiBinding.ConverterParameter>
+                           
+                           <Binding ElementName="tb2" Path="Text"></Binding>
+                           <Binding ElementName="tb3" Path="Text"></Binding>
+                           <Binding ElementName="tb4" Path="Text"></Binding>
+                           <Binding ElementName="tb5" Path="Text"></Binding>
+                           
+                       </MultiBinding>
+                       
+                   </TextBox.Text>
+               </TextBox>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.MultiVariableExpressionConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Used to convert the values.
+            </summary>
+            <param name="values">object value.</param>
+            <param name="targetType">type of target</param>
+            <param name="parameter">parameter values.</param>
+            <param name="culture">culture information</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Calculate.MultiVariableExpressionConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Used to convert back the values.
+            </summary>
+            <param name="value">object value.</param>
+            <param name="targetTypes">type of target </param>
+            <param name="parameter">parameter values</param>
+            <param name="culture">culture informations</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

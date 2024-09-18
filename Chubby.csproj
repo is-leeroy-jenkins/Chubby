@@ -1,0 +1,242 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Chubby.App</StartupObject>
+    <ApplicationIcon>Resources\Assets\NinjaImages\BudExNinjaGrey.ico</ApplicationIcon>
+    <Title>Chubby</Title>
+    <Description>Chubby is a WPF-based desktop application that  offers real-time
+tracking of processes, network traffic, process trees, remote IP connections,
+packet dissection, and more. The application is designed
+using the MVVM (Model-View-ViewModel) architecture, ensuring clean code
+separation and easy maintainability.</Description>
+    <Copyright>2020 @ Terry D. Eppler</Copyright>
+    <PackageIcon>BudExNinja.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Clients\SqlCe\CompactView.exe" />
+    <None Remove="Data\Clients\SQLite\DB Browser for SQLite.exe" />
+    <None Remove="Resources\Assets\CalculatorImages\Cancel.png" />
+    <None Remove="Resources\Assets\CalculatorImages\Main.png" />
+    <None Remove="Resources\Assets\DialogImages\AddColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\AddRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\AddTableButton.png" />
+    <None Remove="Resources\Assets\DialogImages\ApplicationError.ico" />
+    <None Remove="Resources\Assets\DialogImages\Calendar.png" />
+    <None Remove="Resources\Assets\DialogImages\ColumnConfiguration.png" />
+    <None Remove="Resources\Assets\DialogImages\CopyRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DataSettings.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\DeleteTableButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditColumnButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditRecordButton.png" />
+    <None Remove="Resources\Assets\DialogImages\EditSqlButton.png" />
+    <None Remove="Resources\Assets\DialogImages\Error.ico" />
+    <None Remove="Resources\Assets\DialogImages\Error.png" />
+    <None Remove="Resources\Assets\DialogImages\ErrorDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\Error_16.png" />
+    <None Remove="Resources\Assets\DialogImages\Error_64.png" />
+    <None Remove="Resources\Assets\DialogImages\FileBrowse.png" />
+    <None Remove="Resources\Assets\DialogImages\FolderBrowse.png" />
+    <None Remove="Resources\Assets\DialogImages\InputDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\MenuDialog.png" />
+    <None Remove="Resources\Assets\DialogImages\Message.ico" />
+    <None Remove="Resources\Assets\DialogImages\Message.png" />
+    <None Remove="Resources\Assets\DialogImages\SplashNotification.png" />
+    <None Remove="Resources\Assets\DialogImages\TextDialog.png" />
+    <None Remove="Resources\Assets\ExtensionImages\ACCDB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\CSV.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DLL.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DOC.png" />
+    <None Remove="Resources\Assets\ExtensionImages\DOCX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\EXE.png" />
+    <None Remove="Resources\Assets\ExtensionImages\HTML.png" />
+    <None Remove="Resources\Assets\ExtensionImages\MDB.png" />
+    <None Remove="Resources\Assets\ExtensionImages\MDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PNG.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PPTX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\PY.png" />
+    <None Remove="Resources\Assets\ExtensionImages\SDF.png" />
+    <None Remove="Resources\Assets\ExtensionImages\SQL.png" />
+    <None Remove="Resources\Assets\ExtensionImages\TXT.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XLS.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XLSX.png" />
+    <None Remove="Resources\Assets\ExtensionImages\XML.png" />
+    <None Remove="Resources\Assets\MenuImages\CalculatorItem.png" />
+    <None Remove="Resources\Assets\MenuImages\CalendarItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ChromeItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ClockItem.png" />
+    <None Remove="Resources\Assets\MenuImages\CloseItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ControlPanelItem.png" />
+    <None Remove="Resources\Assets\MenuImages\DocumentaionItem.png" />
+    <None Remove="Resources\Assets\MenuImages\EdgeItem.png" />
+    <None Remove="Resources\Assets\MenuImages\ExitItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FileItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FirefoxItem.png" />
+    <None Remove="Resources\Assets\MenuImages\FolderItem.png" />
+    <None Remove="Resources\Assets\MenuImages\MapItem.png" />
+    <None Remove="Resources\Assets\MenuImages\MediaPlayerItem.png" />
+    <None Remove="Resources\Assets\MenuImages\OneDriveItem.png" />
+    <None Remove="Resources\Assets\MenuImages\RefreshItem.png" />
+    <None Remove="Resources\Assets\MenuImages\SaveItem.png" />
+    <None Remove="Resources\Assets\MenuImages\TaskManagerItem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Assets\NinjaImages\BudExNinjaGrey.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ControlzEx" Version="6.0.0" />
+    <PackageReference Include="EPPlus" Version="7.3.2" />
+    <PackageReference Include="EPPlus.Interfaces" Version="6.1.1" />
+    <PackageReference Include="EPPlus.System.Drawing" Version="6.1.1" />
+    <PackageReference Include="Google.Apis" Version="1.68.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.68.0" />
+    <PackageReference Include="Google.Apis.CustomSearchAPI.v1" Version="1.68.0.3520" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004" />
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+    <PackageReference Include="SkiaSharp" Version="2.88.8" />
+    <PackageReference Include="Syncfusion.Licensing" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Shared.Base" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="24.1.41" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="ToastNotifications.Messages.Net6" Version="1.0.4" />
+    <PackageReference Include="ToastNotifications.Net6" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>Libraries\EPP\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>Libraries\EPP\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>Libraries\EPP\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqStatistics">
+      <HintPath>Libraries\LinqStatistics\LinqStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OleDb">
+      <HintPath>Libraries\OleDb\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>Libraries\SqlServer\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>Libraries\SQLite\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>Libraries\SQLite\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>Libraries\SQLCE\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Clients\SqlCe\CompactView.exe" />
+    <Resource Include="Data\Clients\SQLite\DB Browser for SQLite.exe" />
+    <Resource Include="Resources\Assets\CalculatorImages\Cancel.png" />
+    <Resource Include="Resources\Assets\CalculatorImages\Main.png" />
+    <Resource Include="Resources\Assets\DialogImages\AddColumnButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\AddRecordButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\AddTableButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\ApplicationError.ico" />
+    <Resource Include="Resources\Assets\DialogImages\Calendar.png" />
+    <Resource Include="Resources\Assets\DialogImages\ColumnConfiguration.png" />
+    <Resource Include="Resources\Assets\DialogImages\CopyRecordButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\DataSettings.png" />
+    <Resource Include="Resources\Assets\DialogImages\DeleteColumnButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\DeleteRecordButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\DeleteTableButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\EditColumnButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\EditRecordButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\EditSqlButton.png" />
+    <Resource Include="Resources\Assets\DialogImages\Error.ico" />
+    <Resource Include="Resources\Assets\DialogImages\Error.png" />
+    <Resource Include="Resources\Assets\DialogImages\ErrorDialog.png" />
+    <Resource Include="Resources\Assets\DialogImages\Error_16.png" />
+    <Resource Include="Resources\Assets\DialogImages\Error_64.png" />
+    <Resource Include="Resources\Assets\DialogImages\FileBrowse.png" />
+    <Resource Include="Resources\Assets\DialogImages\FolderBrowse.png" />
+    <Resource Include="Resources\Assets\DialogImages\InputDialog.png" />
+    <Resource Include="Resources\Assets\DialogImages\MenuDialog.png" />
+    <Resource Include="Resources\Assets\DialogImages\Message.ico" />
+    <Resource Include="Resources\Assets\DialogImages\Message.png" />
+    <Resource Include="Resources\Assets\DialogImages\SplashNotification.png" />
+    <Resource Include="Resources\Assets\DialogImages\TextDialog.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\ACCDB.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\CSV.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\DB.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\DLL.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\DOC.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\DOCX.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\EXE.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\HTML.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\MDB.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\MDF.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\PDF.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\PNG.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\PPTX.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\PY.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\SDF.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\SQL.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\TXT.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\XLS.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\XLSX.png" />
+    <Resource Include="Resources\Assets\ExtensionImages\XML.png" />
+    <Resource Include="Resources\Assets\MenuImages\CalculatorItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\CalendarItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\ChromeItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\ClockItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\CloseItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\ControlPanelItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\DocumentaionItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\EdgeItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\ExitItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\FileItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\FirefoxItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\FolderItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\MapItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\MediaPlayerItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\OneDriveItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\RefreshItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\SaveItem.png" />
+    <Resource Include="Resources\Assets\MenuImages\TaskManagerItem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Assets\NinjaImages\png\Badger.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Resources\Assets\NinjaImages\png\BudExNinja.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

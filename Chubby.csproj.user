@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="UI\Views\AnalysisView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\ProcessView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Views\SecondWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Windows\Chubby\ChubbyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Controls\Frame\MetroComboFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Controls\Frame\MetroTextInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Accordion\SfAccordion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Button\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Button\ButtonAdv.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Calculator\SfCalculator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Calendar\CalendarEdit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\ChartArea.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\ChartAxis.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\ChartToolBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\Resizer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfChart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfChart3D.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfChartCommon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfHeatMap.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfSmithChart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Chart\SfSunburstChart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\CheckBox\CheckBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\CheckList\CheckList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ComboBox\ComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ComboBox\ComboBoxAdv.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Common\AnimationStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Common\Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Common\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\DataGrid\DataGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\DataGrid\SfDataGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\DropDown\DropDown.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\DropDown\DropDownButtonAdv.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Editor\EditControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Image\SfImageEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ListBox\ListBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ListView\ListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Map\SfMap.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Menu\ContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Menu\Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Menu\MenuItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\MultiSelectionBox\SfMultiColumnDropDownControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Navigation\PrimarySfNavigationDrawer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Navigation\SfNavigationDrawer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Page\Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\PDF\PdfViewerControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Pivot\PivotGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Pivot\PivotGridControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Pivot\PivotGridResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Pivot\PivotSchemaDesigner.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Progress\SfCircularProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Progress\SfLinearProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Progress\SfStepProgressBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\ContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\Dialogs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\FormatDialogs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\MiniToolBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\SfRichTextBoxAdv.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\SfRichTextBoxCommon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\SfRichTextRibbon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\StyleDialogs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\RichTextBox\TableDialogs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ScrollBar\ScrollBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Signboard\SfKanban.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Spreadsheet\SfSpreadsheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Spreadsheet\SfSpreadsheetIcons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Spreadsheet\SfSpreadsheetRibbon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Spreadsheet\SpreadsheetFilterControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\TextBlock\TextBlock.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\TextBox\SfTextBoxExt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\TextBox\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\TextInput\SfTextInputLayout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tile\SfHubTile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tile\SfPulsingTile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tile\Tile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tile\TileViewControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\ToolTip\ToolTip.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tree\SfTreeGrid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tree\SfTreeMap.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tree\SfTreeNavigator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Tree\SfTreeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Window\ChromelessWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\Window\Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Common\Brushes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Common\Common.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Extension\ExtensionResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\FileBrowser\FileBrowserResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Menu\MenuResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Provider\ProviderResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\Tiles\TileResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Themes\ToolStrip\ToolStripResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Views\AnalysisView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Views\ProcessView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Views\SecondWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Styles\View\ViewsStyling.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Windows\File\FileBrowser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\Windows\Folder\FolderBrowser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

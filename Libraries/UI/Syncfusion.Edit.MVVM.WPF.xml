@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Edit.MVVM.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectedTextChangedCommand">
+            <summary>
+            EditControlSelectedTextChangedCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectedTextChangedCommandBehavior">
+            <summary>
+            EditControlSelectedTextChangedCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlSelectedTextChangedCommandBehavior.OnEventRaised(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlSelectedTextChangedCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectedTextChangedCommandBehavior`1">
+            <summary>
+            EditControlSelectedTextChangedCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlTextChangedCommand">
+            <summary>
+            EditControlTextChangedCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlTextChangedCommandBehavior">
+            <summary>
+            EditControlTextChangedCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlTextChangedCommandBehavior.OnEventRaised(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlTextChangedCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlTextChangedCommandBehavior`1">
+            <summary>
+            EditControlTextChangedCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlDocumentSourceChangedCommand">
+            <summary>
+            EditControlDocumentSourceChangedCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlDocumentSourceChangedCommandBehavior">
+            <summary>
+            EditControlDocumentSourceChangedCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlDocumentSourceChangedCommandBehavior.OnEventRaised(System.Object,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlDocumentSourceChangedCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlDocumentSourceChangedCommandBehavior`1">
+            <summary>
+            EditControlDocumentSourceChangedCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseBoxOpeningCommand">
+            <summary>
+            EditControlIntellisenseBoxOpeningCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseBoxOpeningCommandBehavior">
+            <summary>
+            EditControlIntellisenseBoxOpeningCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseBoxOpeningCommandBehavior.OnEventRaised(System.Object,Syncfusion.Windows.Edit.EditIntellisenseArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseBoxOpeningCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseBoxOpeningCommandBehavior`1">
+            <summary>
+            EditControlIntellisenseBoxOpeningCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseDrillDownCommand">
+            <summary>
+            EditControlIntellisenseDrillDownCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseDrillDownCommandBehavior">
+            <summary>
+            EditControlIntellisenseDrillDownCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseDrillDownCommandBehavior.OnEventRaised(System.Object,Syncfusion.Windows.Edit.EditIntellisenseArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseDrillDownCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlIntellisenseDrillDownCommandBehavior`1">
+            <summary>
+            EditControlIntellisenseDrillDownCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectionChangedCommand">
+            <summary>
+            EditControlSelectionChangedCommand class
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectionChangedCommandBehavior">
+            <summary>
+            EditControlSelectionChangedCommandBehavior class
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlSelectionChangedCommandBehavior.OnEventRaised(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            This method is called when any event is raised.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Edit.MVVM.EditControlSelectionChangedCommandBehavior.OnTargetAttached">
+            <summary>
+            This method is called when the target is attached.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Edit.MVVM.EditControlSelectionChangedCommandBehavior`1">
+            <summary>
+            EditControlSelectionChangedCommandBehavior class
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Syncfusion.EditMVVMWPFAssembly">
+            <summary>
+            EditMVVMWPF assembly class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="F:Syncfusion.EditMVVMWPFAssembly.Name">
+            <summary>
+            Name of the assembly.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.EditMVVMWPFAssembly.Assembly">
+            <summary>
+            Defines assembly object reference variable.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.EditMVVMWPFAssembly.RootNamespace">
+            <summary>
+            Root namespace of the assembly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.EditMVVMWPFAssembly.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Syncfusion.EditMVVMWPFAssembly"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.EditMVVMWPFAssembly.AssemblyResolver(System.Object,System.ResolveEventArgs)">
+            <summary>
+            Assemblies the resolver.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.ResolveEventArgs"/> instance containing the event data.</param>
+            <returns>Assembly object.</returns>
+        </member>
+        <member name="T:Syncfusion.AssemblyInfo">
+            <summary>
+            Assembly info class
+            </summary>
+        </member>
+    </members>
+</doc>
