@@ -1,5 +1,5 @@
 # How to use Chubby
 
-Simply run the executable `BudgetExecutionSetup.exe` and it should install.
+Simply run the executable `Chubby.exe` and it should install.
 
 This only works on Windows.
