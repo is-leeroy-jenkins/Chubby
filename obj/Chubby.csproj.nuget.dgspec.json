@@ -24,7 +24,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net8.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -32,8 +32,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows7.0",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -49,8 +49,8 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows7.0",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "dependencies": {
             "ControlzEx": {
               "target": "Package",
@@ -84,10 +84,6 @@
               "target": "Package",
               "version": "[2.4.10, )"
             },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Microsoft.Office.Interop.Excel": {
               "target": "Package",
               "version": "[15.0.4795.1001, )"
@@ -114,23 +110,23 @@
             },
             "Syncfusion.SfSkinManager.WPF": {
               "target": "Package",
-              "version": "[24.1.41, )"
+              "version": "[20.3.0.61, )"
             },
             "Syncfusion.Shared.Base": {
               "target": "Package",
-              "version": "[24.1.41, )"
+              "version": "[20.3.0.61, )"
             },
             "Syncfusion.Shared.WPF": {
               "target": "Package",
-              "version": "[24.1.41, )"
+              "version": "[20.3.0.61, )"
             },
             "Syncfusion.UI.WPF.NET": {
               "target": "Package",
-              "version": "[24.1.41, )"
+              "version": "[27.1.48, )"
             },
-            "System.Data.Common": {
+            "System.Data.OleDb": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[8.0.0, )"
             },
             "ToastNotifications.Messages.Net6": {
               "target": "Package",
@@ -160,7 +156,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,7 +20,7 @@ packet dissection, and more. The application is designed
 using the MVVM (Model-View-ViewModel) architecture, ensuring clean code
 separation and easy maintainability.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eaeae588f4ae8bcd2882fca1adc0b27a31cd154")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd431eebc1722f214cf4fd0aba90c654d53be24f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chubby")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chubby")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

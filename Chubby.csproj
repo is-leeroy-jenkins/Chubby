@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>disable</Nullable>
     <UseWPF>true</UseWPF>
     <StartupObject>Chubby.App</StartupObject>
@@ -16,15 +15,12 @@ separation and easy maintainability.</Description>
     <Copyright>2020 @ Terry D. Eppler</Copyright>
     <PackageIcon>BudExNinja.png</PackageIcon>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>True</Optimize>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <Optimize>False</Optimize>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Data\Clients\SqlCe\CompactView.exe" />
     <None Remove="Data\Clients\SQLite\DB Browser for SQLite.exe" />
@@ -96,11 +92,9 @@ separation and easy maintainability.</Description>
     <None Remove="Resources\Assets\MenuImages\SaveItem.png" />
     <None Remove="Resources\Assets\MenuImages\TaskManagerItem.png" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="Resources\Assets\NinjaImages\BudExNinjaGrey.ico" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="ControlzEx" Version="6.0.0" />
     <PackageReference Include="EPPlus" Version="7.3.2" />
@@ -110,22 +104,20 @@ separation and easy maintainability.</Description>
     <PackageReference Include="Google.Apis.Core" Version="1.68.0" />
     <PackageReference Include="Google.Apis.CustomSearchAPI.v1" Version="1.68.0.3520" />
     <PackageReference Include="MahApps.Metro" Version="2.4.10" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004" />
     <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
     <PackageReference Include="ModernWpfUI" Version="0.9.6" />
     <PackageReference Include="SkiaSharp" Version="2.88.8" />
     <PackageReference Include="Syncfusion.Licensing" Version="24.1.41" />
-    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="24.1.41" />
-    <PackageReference Include="Syncfusion.Shared.Base" Version="24.1.41" />
-    <PackageReference Include="Syncfusion.Shared.WPF" Version="24.1.41" />
-    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="24.1.41" />
-    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="20.3.0.61" />
+    <PackageReference Include="Syncfusion.Shared.Base" Version="20.3.0.61" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="20.3.0.61" />
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="27.1.48" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.0" />
     <PackageReference Include="ToastNotifications.Messages.Net6" Version="1.0.4" />
     <PackageReference Include="ToastNotifications.Net6" Version="1.0.4" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="EPPlus">
       <HintPath>Libraries\EPP\EPPlus.dll</HintPath>
@@ -136,26 +128,7 @@ separation and easy maintainability.</Description>
     <Reference Include="EPPlus.System.Drawing">
       <HintPath>Libraries\EPP\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
-    <Reference Include="LinqStatistics">
-      <HintPath>Libraries\LinqStatistics\LinqStatistics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.OleDb">
-      <HintPath>Libraries\OleDb\System.Data.OleDb.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>Libraries\SqlServer\System.Data.SqlClient.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite">
-      <HintPath>Libraries\SQLite\System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6">
-      <HintPath>Libraries\SQLite\System.Data.SQLite.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SqlServerCe">
-      <HintPath>Libraries\SQLCE\System.Data.SqlServerCe.dll</HintPath>
-    </Reference>
   </ItemGroup>
-
   <ItemGroup>
     <Resource Include="Data\Clients\SqlCe\CompactView.exe" />
     <Resource Include="Data\Clients\SQLite\DB Browser for SQLite.exe" />
@@ -227,7 +200,6 @@ separation and easy maintainability.</Description>
     <Resource Include="Resources\Assets\MenuImages\SaveItem.png" />
     <Resource Include="Resources\Assets\MenuImages\TaskManagerItem.png" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Resources\Assets\NinjaImages\png\Badger.png">
       <Pack>True</Pack>
@@ -238,5 +210,4 @@ separation and easy maintainability.</Description>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-
 </Project>

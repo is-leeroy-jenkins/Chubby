@@ -140,7 +140,7 @@ namespace Chubby {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Chubby;V1.0.0.0;component/ui/windows/notification/notification.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Chubby;component/ui/windows/notification/notification.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\UI\Windows\Notification\Notification.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

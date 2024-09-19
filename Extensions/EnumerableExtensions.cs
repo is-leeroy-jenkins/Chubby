@@ -185,43 +185,6 @@ namespace Chubby
         }
 
         /// <summary>
-        /// Filters the specified columnName.
-        /// </summary>
-        /// <param name="dataRow">The dataRow.</param>
-        /// <param name="name">The columnName.</param>
-        /// <param name="value">The filter.</param>
-        /// <returns></returns>
-        public static IEnumerable<DataRow> Filter( this IEnumerable<DataRow> dataRow, string name,
-            string value )
-        {
-            try
-            {
-                ThrowIf.Null( name, nameof( name ) );
-                ThrowIf.Null( value, nameof( value ) );
-                var _row = dataRow?.First( );
-                var _dictionary = _row.ToDictionary( );
-                var _array = _dictionary.Keys.ToArray( );
-                if( _array?.Contains( name ) == true )
-                {
-                    var _select = dataRow
-                        ?.Where( p => p.Field<string>( name ) == value )
-                        ?.Select( p => p );
-
-                    return _select?.Any( ) == true
-                        ? _select
-                        : default( IEnumerable<DataRow> );
-                }
-
-                return default( IEnumerable<DataRow> );
-            }
-            catch( Exception ex )
-            {
-                EnumerableExtensions.Fail( ex );
-                return default( IEnumerable<DataRow> );
-            }
-        }
-
-        /// <summary>
         /// Filters the specified dictionary.
         /// </summary>
         /// <param name="dataRow">The data row.</param>
