@@ -43,7 +43,7 @@ A WPF-based desktop application that kind of like task manager offering real-tim
 - [IO](https://github.com/is-leeroy-jenkins/Chubby/tree/master/IO) - input output classes used for networking and the file systemm.
 - [Static](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Static) - static types used in Chubby.
 - [Services](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Services) - unique sevice classes in by Chubby.
-- [Controls](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Controls) - Chubby Controls.
+- [Controls](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Controls) - Chubby Controls.
 - [Windows](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Windows) - Chubby Windows.
 - [Styles](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Styles) - Chubby Styles.
 - [Themes](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Themes) - Chubby Themes.
