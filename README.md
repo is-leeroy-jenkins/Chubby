@@ -39,7 +39,7 @@ A WPF-based desktop application that kind of like task manager offering real-tim
 - [Enumerations](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Enumerations) - various enumerations used in Chubby.
 - [Extensions](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Extensions)- extension methods by type.
 - [Clients](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Data/Clients) - other tools used and available.
-- [Models](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Ninja) - models used in Chubby analytics.
+- [Models](https://github.com/is-leeroy-jenkins/Chubby/blob/master/Models/TcpProcess.cs) - models used in Chubby analytics.
 - [IO](https://github.com/is-leeroy-jenkins/Chubby/tree/master/IO) - input output classes used for networking and the file systemm.
 - [Static](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Static) - static types used in Chubby.
 - [Services](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Services) - unique sevice classes in by Chubby.
