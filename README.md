@@ -45,7 +45,7 @@ A WPF-based desktop application that kind of like task manager offering real-tim
 - [Services](https://github.com/is-leeroy-jenkins/Chubby/tree/master/Services) - unique sevice classes in by Chubby.
 - [Controls](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Controls) - Chubby Controls.
 - [Windows](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Windows) - Chubby Windows.
-- [Styles](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Styles) - Chubby Styles.
+- [Styles](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Styles) - Chubby Styles.
 - [Themes](https://github.com/is-leeroy-jenkins/Chubby/tree/master/UI/Views/Themes) - Chubby Themes.
 
 
